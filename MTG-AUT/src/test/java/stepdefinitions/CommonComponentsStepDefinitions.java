@@ -9,7 +9,7 @@ public class CommonComponentsStepDefinitions extends BaseTest {
 	private CommonComponents commonComponents;
 
 	public CommonComponentsStepDefinitions() {
-		commonComponents = new HomePage(getDriver());
+		commonComponents = new CommonComponents(getDriver());
 	}
 
 	@Given("User enter the URL {string}")
@@ -19,18 +19,17 @@ public class CommonComponentsStepDefinitions extends BaseTest {
 
 	@Given("User click on Menu")
 	public void user_click_on_menu() {
-		commonComponents.tapOnRightMenu();
 
 	}
 
 	@Given("User click on My Account Menu")
 	public void user_click_on_my_account_menu() {
-		commonComponents.tapOnMyAccountMenu();
+		//commonComponents.tapOnMyAccountMenu();
 	}
 	
 	@Given("User click on Shop Menu")
 	public void user_click_on_shop_menu() {
-		commonComponents.tapOnShopMenu();
+		//commonComponents.tapOnShopMenu();
 	}
 
 }

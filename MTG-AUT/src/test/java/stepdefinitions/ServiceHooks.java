@@ -4,18 +4,16 @@ import core.BaseTest;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
-import java.net.MalformedURLException;
-
 public class ServiceHooks {
 	@Before
-	public void initializeTest() throws MalformedURLException {
+	public void initializeTest(){
 		System.out.println("Khởi tạo driver...");
-		BaseTest.setupDriver();
+		BaseTest.beforeMethod();
 	}
 	
 	@After
 	public void afterHookFunction() {
 		System.out.println("Tắt driver...");
-		BaseTest.tearDown();
+		BaseTest.afterSuite();
 	}
 }

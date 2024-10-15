@@ -2,32 +2,24 @@ package core;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
 
 public class BaseTest {
-	private WebDriver driver;
+	private static WebDriver driver;
 
 	@BeforeMethod
-	@Parameters("browser")
-	public void beforeSuite(@Optional("chrome") String browser) {
-		/*System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-		driver = new ChromeDriver();*/
-		if (browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-			driver = new ChromeDriver();
-		} else if (browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe");
-			driver = new FirefoxDriver();
-		}
+	public static void beforeMethod() {
+		// Set up the WebDriver using Chrome
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+
+		// Maximize the browser window
 		driver.manage().window().maximize();
 	}
 
 	@AfterMethod
-	public void afterSuite() {
+	public static void afterSuite() {
 		//Đóng driver sau khi test kết thúc
 		if (driver != null) {
 			driver.close();
@@ -35,7 +27,7 @@ public class BaseTest {
 		}
 	}
 
-	public WebDriver getDriver() {
+	public static WebDriver getDriver() {
 		return driver;
 	}
 
