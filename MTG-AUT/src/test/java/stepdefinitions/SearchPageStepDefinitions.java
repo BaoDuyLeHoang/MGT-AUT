@@ -1,8 +1,5 @@
 package stepdefinitions;
 
-import org.openqa.selenium.WebDriver;
-
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import page.SearchPage;
@@ -10,7 +7,6 @@ import page.SearchPage;
 import static core.BaseTest.getDriver;
 
 public class SearchPageStepDefinitions {
-    private WebDriver driver;
     private SearchPage searchPage;
 
     // Constructor to initialize WebDriver

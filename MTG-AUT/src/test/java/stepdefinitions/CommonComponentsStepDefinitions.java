@@ -3,7 +3,6 @@ package stepdefinitions;
 import core.BaseTest;
 import io.cucumber.java.en.Given;
 import page.CommonComponents;
-import page.HomePage;
 
 public class CommonComponentsStepDefinitions extends BaseTest {
 	private CommonComponents commonComponents;

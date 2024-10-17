@@ -7,7 +7,7 @@ public class Test extends BaseTest {
 
     String url = "http://localhost:3000/tim-kiem-mo";
     @org.testng.annotations.Test
-    public void Test(){
+    public void TestAuto(){
         SearchPage search = new SearchPage(getDriver());
         BaseTest.getDriver().navigate().to(url);
         search.sendTextToName("123");
