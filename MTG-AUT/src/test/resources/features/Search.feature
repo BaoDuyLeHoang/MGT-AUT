@@ -4,7 +4,7 @@ Feature: Search Grave
   So that I can find information about deceased individuals
 
   Background:
-    Given User is on the search page
+    Given User enter the URL "http://localhost:3000/tim-kiem-mo"
 
   @search
   Scenario Outline: Search for a grave with various criteria

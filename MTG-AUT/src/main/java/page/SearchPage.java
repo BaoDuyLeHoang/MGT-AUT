@@ -12,7 +12,7 @@ public class SearchPage extends BasePage {
         super(driver);
     }
 
-    @FindBy(how = How.CLASS_NAME, using = "search-input")
+    @FindBy(how = How.ID, using = "search-input")
     private WebElement inputName;
 
     @FindBy(how = How.CLASS_NAME, using = "filter-input-byear")
@@ -36,6 +36,10 @@ public class SearchPage extends BasePage {
     public void sendTextToDeathYear(String deathYear){
         enterText(inputDeathYear, deathYear);
     }
+    public void sendTextToHomeTown(String homeTown){
+        enterText(inputHomeTown, homeTown);
+    }
+
     public void tapButtonSearch(){
         clickElement(btnSearch);
     }

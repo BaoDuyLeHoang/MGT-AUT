@@ -7,28 +7,21 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import page.SearchPage;
 
+import static core.BaseTest.getDriver;
+
 public class SearchPageStepDefinitions {
     private WebDriver driver;
     private SearchPage searchPage;
 
     // Constructor to initialize WebDriver
     public SearchPageStepDefinitions() {
-        // Initialize your WebDriver here
-        // this.driver = YourWebDriverSetup.getDriver();
-        this.searchPage = new SearchPage(driver);
-    }
-
-    @Given("User is on the search page")
-    public void userIsOnTheSearchPage() {
-        // Navigate to the search page
-        // driver.get("https://your-search-page-url.com");
+        this.searchPage = new SearchPage(getDriver());
     }
 
     @When("User enters {string} in the name field")
     public void userEntersInTheNameField(String name) {
         searchPage.sendTextToName(name);
     }
-
     @When("User enters {string} in the birth year field")
     public void userEntersInTheBirthYearField(String birthYear) {
         searchPage.sendTextToBirthYear(birthYear);
@@ -40,8 +33,7 @@ public class SearchPageStepDefinitions {
 
     @When("User enters {string} in the hometown field")
     public void userEntersInTheHometownField(String homeTown) {
-        // Implement this method in SearchPage class
-        // searchPage.sendTextToHomeTown(homeTown);
+        searchPage.sendTextToHomeTown(homeTown);
     }
 
     @When("User clicks the search button")

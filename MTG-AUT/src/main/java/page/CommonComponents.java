@@ -40,4 +40,20 @@ public class CommonComponents extends BasePage {
 	@FindBy(how = How.ID, using = "relative-grave")
 	private WebElement relativeGrave;
 
+	public void clickHomePage(){
+		clickElement(homePage);
+	}
+	public void clickIntroduce(){
+		clickElement(introduce);
+	}
+	public void clickService(){
+		clickElement(service);
+	}
+	public void clickContact(){
+		clickElement(contact);
+	}
+	public void clickUserIcon(){
+		clickElement(userIcon);
+	}
+
 }

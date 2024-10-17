@@ -17,19 +17,29 @@ public class CommonComponentsStepDefinitions extends BaseTest {
 	    BaseTest.getDriver().navigate().to(url);
 	}
 
-	@Given("User click on Menu")
-	public void user_click_on_menu() {
-
+	@Given("User click on Home Page")
+	public void user_click_on_home_page() {
+		commonComponents.clickHomePage();
 	}
 
-	@Given("User click on My Account Menu")
-	public void user_click_on_my_account_menu() {
+	@Given("User click on Introduce")
+	public void user_click_on_introduce() {
 		//commonComponents.tapOnMyAccountMenu();
 	}
-	
-	@Given("User click on Shop Menu")
-	public void user_click_on_shop_menu() {
-		//commonComponents.tapOnShopMenu();
+
+	@Given("User click on Service")
+	public void user_click_on_service() {
+		commonComponents.clickService();
+	}
+
+	@Given("User click on Contact")
+	public void user_click_on_contact() {
+		commonComponents.clickContact();
+	}
+
+	@Given("User click on User Icon")
+	public void user_click_on_user_icon() {
+		commonComponents.clickUserIcon();
 	}
 
 }
