@@ -1,17 +1,14 @@
 Feature: Login
-  Login features
+  As a user
+  I want to log in to the application
+  So that I can access my account
 
   Background: 
-    Given User enter the URL "https://practice.automationtesting.in"
+    Given User enter the URL "http://localhost:3000/login"
 
-  @login 
-  Scenario Outline: Verify user successfully login to the web page
-    Given User click on Menu
-    And User click on My Account Menu
-    
-    And User click on login button
-    Then User should see text "<expectedMessage>"
+  @login
+  Scenario: Verify user successfully logs in
+    And User enter username "0201030293"
+    And User enter password "00635259"
+    Then User click on login button
 
-    Examples: 
-      | username               | password       | expectedMessage    |
-      | alibabon1111@gmail.com | P@ssword9989!A | Hello alibabon1111 |

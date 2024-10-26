@@ -15,9 +15,9 @@ import org.testng.annotations.Test;
 		"html:target/cucumber-reports/cucumber-pretty.html", 
 		"json:target/cucumber-reports/CucumberTestReport.json",
 		"rerun:target/cucumber-reports/rerun.txt" },
-		tags = "@service")
+		tags = "@mainflow")
 
-public class LoginTestRunner {
+public class MainFlowRunner {
 		private TestNGCucumberRunner testNGCucumberRunner;
 		
 		@BeforeClass(alwaysRun=true) 
@@ -50,3 +50,4 @@ public class LoginTestRunner {
 			testNGCucumberRunner.finish();
 		}
 }
+
