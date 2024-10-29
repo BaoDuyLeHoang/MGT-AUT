@@ -21,11 +21,10 @@ public class ServicePage extends BasePage {
     List<WebElement> serviceList;
 
     public void getService(int index) {
-        // Ensure the index is within bounds
         if (index >= 0 && index < serviceList.size()) {
             WebElement service = serviceList.get(index);
-            this.isElementVisibility(service); // Check visibility before clicking
-            service.click(); // Click the service
+            this.isElementVisibility(service);
+            service.click();
         } else {
             throw new IndexOutOfBoundsException("Index out of bounds for serviceList");
         }

@@ -23,7 +23,10 @@ public class ServiceDetailPage extends BasePage {
     @FindBy(how = How.CLASS_NAME, using = "grave-select")
     private WebElement graveSelect; // Locate the select element
 
-    
+    @FindBy(how = How.CLASS_NAME, using = "add-to-cart")
+    private WebElement btnAdd; // Locate the select element
+
+
     // Method to select an option by value
     public void selectGraveOption(String value) {
         Select select = new Select(graveSelect); // Create a Select object
@@ -40,6 +43,10 @@ public class ServiceDetailPage extends BasePage {
     public void selectGraveOptionByIndex(int index) {
         Select select = new Select(graveSelect);
         select.selectByIndex(index); // Select the option by index
+    }
+
+    public void clickAddButton(){
+        clickElement(btnAdd);
     }
 
 }

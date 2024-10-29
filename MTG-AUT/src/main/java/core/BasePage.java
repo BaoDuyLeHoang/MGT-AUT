@@ -58,6 +58,7 @@ public class BasePage {
 	}
 
 	public void clickElement(WebElement element) {
+		this.isElementVisibility(element);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
 	}

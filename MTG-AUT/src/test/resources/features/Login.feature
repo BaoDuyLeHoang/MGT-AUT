@@ -8,7 +8,6 @@ Feature: Login
 
   @login
   Scenario: Verify user successfully logs in
-    And User enter username "0201030293"
-    And User enter password "00635259"
+    And User click on Service
+    And User enter password "123"
     Then User click on login button
-

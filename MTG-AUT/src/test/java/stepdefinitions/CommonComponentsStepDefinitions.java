@@ -18,7 +18,7 @@ public class CommonComponentsStepDefinitions extends BaseTest {
 
 	@Given("User click on Home Page")
 	public void user_click_on_home_page() {
-		commonComponents.clickHomePage();
+		commonComponents.clickTrangChu();
 	}
 
 	@Given("User click on Introduce")
@@ -28,12 +28,17 @@ public class CommonComponentsStepDefinitions extends BaseTest {
 
 	@Given("User click on Service")
 	public void user_click_on_service() {
-		commonComponents.clickService();
+		commonComponents.clickDichVu();
 	}
 
 	@Given("User click on Contact")
 	public void user_click_on_contact() {
-		commonComponents.clickContact();
+		commonComponents.clickLienHe();
+	}
+
+	@Given("User click on Search Grave")
+	public void user_click_on_search_grave() {
+		commonComponents.clickTimKiemMo();
 	}
 
 	@Given("User click on User Icon")

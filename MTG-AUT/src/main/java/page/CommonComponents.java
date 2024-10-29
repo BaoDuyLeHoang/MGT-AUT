@@ -16,19 +16,22 @@ public class CommonComponents extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(how = How.ID, using = "menu-homepage")
-	private WebElement homePage;
+	@FindBy(how = How.XPATH, using = "//a[text()='Trang chủ']")
+	private WebElement trangChu;
 
-	@FindBy(how = How.ID, using = "menu-introduce")
-	private WebElement introduce;
+	@FindBy(how = How.XPATH, using = "//a[text()='Giới thiệu']")
+	private WebElement gioiThieu;
 
-	@FindBy(how = How.ID, using = "menu-services")
-	private WebElement service;
+	@FindBy(how = How.XPATH, using = "//a[text()='Dịch vụ']")
+	private WebElement dichVu;
 
-	@FindBy(how = How.ID, using = "menu-contact")
-	private WebElement contact;
+	@FindBy(how = How.XPATH, using = "//a[text()='Tìm kiếm mộ']")
+	private WebElement timKiemMo;
 
-	@FindBy(how = How.ID, using = "user-icon")
+	@FindBy(how = How.ID, using = "//a[text()='Liên hệ']")
+	private WebElement lienHe;
+
+	@FindBy(how = How.CLASS_NAME, using = "user-icon")
 	private WebElement userIcon;
 
 	@FindBy(how = How.ID, using = "profile")
@@ -40,20 +43,29 @@ public class CommonComponents extends BasePage {
 	@FindBy(how = How.ID, using = "relative-grave")
 	private WebElement relativeGrave;
 
-	public void clickHomePage(){
-		clickElement(homePage);
+	@FindBy(how = How.XPATH, using = "//a[text()='Giỏ hàng']")
+	private WebElement gioHang;
+
+	public void clickTrangChu(){
+		clickElement(trangChu);
 	}
-	public void clickIntroduce(){
-		clickElement(introduce);
+	public void clickGioiThieu(){
+		clickElement(gioiThieu);
 	}
-	public void clickService(){
-		clickElement(service);
+	public void clickDichVu(){
+		clickElement(dichVu);
 	}
-	public void clickContact(){
-		clickElement(contact);
+	public void clickTimKiemMo(){
+		clickElement(timKiemMo);
+	}
+	public void clickLienHe(){
+		clickElement(lienHe);
 	}
 	public void clickUserIcon(){
 		clickElement(userIcon);
+	}
+	public void clickGioHang(){
+		clickElement(gioHang);
 	}
 
 }

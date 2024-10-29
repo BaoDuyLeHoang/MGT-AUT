@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 		"html:target/cucumber-reports/cucumber-pretty.html", 
 		"json:target/cucumber-reports/CucumberTestReport.json",
 		"rerun:target/cucumber-reports/rerun.txt" },
-		tags = "@service")
+		tags = "@login")
 
 public class LoginTestRunner {
 		private TestNGCucumberRunner testNGCucumberRunner;
@@ -28,15 +28,17 @@ public class LoginTestRunner {
 		
 		// Phương thức này chạy các scenarios
 		@Test(description = "Run Cucumber Features", dataProvider = "scenarios")  
-	    public void feature(PickleWrapper pickleWrapper, FeatureWrapper cucumberFeature) {  
+	    public void feature(PickleWrapper pickleWrapper, FeatureWrapper cucumberFeature) throws InterruptedException {
 			// Chạy một kịch bản riêng lẻ bằng cách lấy pickle từ PickleWrapper
-	        testNGCucumberRunner.runScenario(pickleWrapper.getPickle());  
+	        testNGCucumberRunner.runScenario(pickleWrapper.getPickle());
+			Thread.sleep(5000);
 	    }
 		
 		// DataProvider cung cấp các scenarios cho phương thức kiểm thử  
 		@DataProvider(name = "scenarios")  
-		public Object[][] scenarios() {  
-	        if (testNGCucumberRunner == null) {  
+		public Object[][] scenarios() throws InterruptedException {
+
+	        if (testNGCucumberRunner == null) {
 	            testNGCucumberRunner = new TestNGCucumberRunner(getClass());  
 	        }  
 	     // Cung cấp các scenarios sẽ được chạy trong các bài kiểm thử  

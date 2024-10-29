@@ -41,6 +41,7 @@ public class SearchPage extends BasePage {
     }
 
     public void tapButtonSearch(){
+        this.isElementVisibility(btnSearch);
         clickElement(btnSearch);
     }
 
