@@ -20,6 +20,9 @@ public class ServicePage extends BasePage {
     @FindBy(how = How.CLASS_NAME, using = "sell-service-card")
     List<WebElement> serviceList;
 
+    @FindBy(how = How.CLASS_NAME, using = "sl-add-to-cart-button")
+    List<WebElement> dichvutheotheloaiList;
+
     public void getService(int index) {
         if (index >= 0 && index < serviceList.size()) {
             WebElement service = serviceList.get(index);
@@ -29,4 +32,18 @@ public class ServicePage extends BasePage {
             throw new IndexOutOfBoundsException("Index out of bounds for serviceList");
         }
     }
+
+    public void getDichVuTheoTheLoai(int index) {
+        if (index >= 0 && index < dichvutheotheloaiList.size()) {
+            WebElement service = dichvutheotheloaiList.get(index);
+            this.isElementVisibility(service);
+            service.click();
+        } else {
+            throw new IndexOutOfBoundsException("Index out of bounds for serviceList");
+        }
+    }
+    public void getServiceByName(String name) {
+        getTextFromList(dichvutheotheloaiList, "text", name);
+    }
+
 }

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class BasePage {
 
@@ -43,13 +44,14 @@ public class BasePage {
 		}
 	}
 
+	public void getTextFromList(List<WebElement> _list ,String type, String input) {
 
-	public void navigateToPage(String subURL) {
-		driver.navigate().to(Constants.BASEURL + "/" + subURL);
-	}
-
-	public void navigateToPage() {
-		driver.navigate().to(Constants.BASEURL);
+		for (WebElement list : _list) {
+			String listText = list.getAttribute(type);
+			if (listText.contains(input)) {
+				list.click();
+			}
+		}
 	}
 
 	public void enterText(WebElement element, String text) {
@@ -57,10 +59,15 @@ public class BasePage {
 		element.sendKeys(text);
 	}
 
-	public void clickElement(WebElement element) {
+	public void clickElement(WebElement element){
 		this.isElementVisibility(element);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
+		}
 	}
 
 	public String getText(WebElement element) {

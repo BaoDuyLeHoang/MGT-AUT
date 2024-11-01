@@ -12,7 +12,7 @@ public class SearchPage extends BasePage {
         super(driver);
     }
 
-    @FindBy(how = How.ID, using = "search-input")
+    @FindBy(how = How.CLASS_NAME, using = "search-grave-input")
     private WebElement inputName;
 
     @FindBy(how = How.CLASS_NAME, using = "filter-input-byear")

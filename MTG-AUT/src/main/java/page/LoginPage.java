@@ -14,10 +14,10 @@ public class LoginPage extends BasePage{
         super(driver);
     }
 
-     @FindBy(how = How.ID, using = "text")
+     @FindBy(how = How.CSS, using = "input[type='text']")
     private WebElement text;
 
-    @FindBy(how = How.ID, using = "password")
+    @FindBy(how = How.CSS, using = "input[type='password']")
     private WebElement password;
 
     @FindBy(how = How.CLASS_NAME, using = "login-btn")

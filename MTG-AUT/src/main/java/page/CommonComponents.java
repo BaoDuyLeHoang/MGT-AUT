@@ -22,6 +22,9 @@ public class CommonComponents extends BasePage {
 	@FindBy(how = How.XPATH, using = "//a[text()='Giới thiệu']")
 	private WebElement gioiThieu;
 
+	@FindBy(how = How.XPATH, using = "//a[text()='Mộ người thân']")
+	private WebElement moNguoiThan;
+
 	@FindBy(how = How.XPATH, using = "//a[text()='Dịch vụ']")
 	private WebElement dichVu;
 
@@ -66,6 +69,9 @@ public class CommonComponents extends BasePage {
 	}
 	public void clickGioHang(){
 		clickElement(gioHang);
+	}
+	public void clickMoNguoiThan(){
+		clickElement(moNguoiThan);
 	}
 
 }

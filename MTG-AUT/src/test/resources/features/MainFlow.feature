@@ -1,18 +1,26 @@
-Feature: Search Grave
-  As a user
-  I want to search for graves
-  So that I can find information about deceased individuals
+Feature: Main Flow of the Application
 
   Background:
     Given User enter the URL "http://localhost:3000/login"
 
   @mainflow
-  Scenario: Customer login
-    And User enter username "0201030293"
-    And User enter password "00635259"
-    Then User click on login button
+  Scenario: User logs in and completes a service booking
+    When User enters username "0201030293"
+    And User enters password "00635259"
+    Then User clicks the login button
 
-  Scenario: Search with only name
-    When User enters "Nguyễn Văn A" in the name field
-    And User clicks the search button
-    Then User should see search results for "Nguyễn Văn A"
+    When User clicks on User Icon
+    Then User clicks Relative Grave
+
+    When User clicks the Grave details button
+    And User clicks the Book Service button
+    Then User selects the service by category at index 0
+
+    When User clicks on User Icon
+    And User clicks on Cart
+    And User clicks the Select All checkbox
+    Then User clicks the Payment button
+
+    When User selects "VNPay" Payment button
+    And User enters the date "12-30-2024"
+    Then User clicks the Checkout button

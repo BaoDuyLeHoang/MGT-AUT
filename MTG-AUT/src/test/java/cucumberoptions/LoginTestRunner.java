@@ -31,7 +31,7 @@ public class LoginTestRunner {
 	    public void feature(PickleWrapper pickleWrapper, FeatureWrapper cucumberFeature) throws InterruptedException {
 			// Chạy một kịch bản riêng lẻ bằng cách lấy pickle từ PickleWrapper
 	        testNGCucumberRunner.runScenario(pickleWrapper.getPickle());
-			Thread.sleep(5000);
+			//Thread.sleep(5000);
 	    }
 		
 		// DataProvider cung cấp các scenarios cho phương thức kiểm thử  

@@ -39,9 +39,7 @@ public class SearchPageStepDefinitions {
 
     @Then("User should see search results for {string}")
     public void userShouldSeeSearchResultsFor(String name) {
-        // Implement verification of search results
-        // This might involve checking for the presence of the name in the results
-        // or verifying that the results page has loaded
+
     }
 
     @When("User clears all search fields")

@@ -14,13 +14,13 @@ public class CartPage extends BasePage {
         super(driver);
     }
 
-    @FindBy(how = How.CLASS_NAME, using = "select-all-checkbox")
+    @FindBy(how = How.CLASS_NAME, using = "cart-page-select-all")
     private WebElement selectAllCheckbox;
 
-    @FindBy(how = How.CLASS_NAME, using = "payment-btn")
+    @FindBy(how = How.CLASS_NAME, using = "cart-page-payment-btn")
     private WebElement paymentBtn;
 
-    @FindBy(how = How.XPATH, using = "//input[@class='item-checkbox']")
+    @FindBy(how = How.CLASS_NAME, using = "cart-page-item-checkbox")
     List<WebElement> itemList;
 
 
