@@ -15,7 +15,46 @@ public class CommonComponents extends BasePage {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
+	//ADMIN
+	@FindBy(how = How.CSS, using = "sidebar-menu-item.active")
+	private WebElement dashboardQuanLyTaiKhoan;
 
+	//MANAGER
+	@FindBy(how = How.XPATH, using = "//a[@href='/profilestaff']")
+	private WebElement dashboardHoSoNhanVien_Manager;
+
+	@FindBy(how = How.XPATH, using = "//a[@href='/']")
+	private WebElement dashboardThongKe;
+
+	@FindBy(how = How.XPATH, using = "//a[@href='/danhsachdonhang']")
+	private WebElement dashboardDonHang;
+
+	@FindBy(how = How.XPATH, using = "//a[@href='/danhsachnhanvien']")
+	private WebElement dashboardNhanVien;
+
+	@FindBy(how = How.XPATH, using = "//a[@href='/danhsachmo']")
+	private WebElement dashboardDanhSachMo;
+
+	@FindBy(how = How.XPATH, using = "//a[@href='/danhsachphanhoikhachhang']")
+	private WebElement dashboardPhanHoiKhachHang;
+
+	@FindBy(how = How.XPATH, using = "//a[@href='/chitietdonhang']")
+	private WebElement dashboardGiaoViec;
+
+	@FindBy(how = How.XPATH, using = "//a[@href='/danhsachthanhtoan']")
+	private WebElement dashboardThanhToan;
+
+	//STAFF
+	@FindBy(how = How.XPATH, using = "//a[@href='//profilestaff-staff']")
+	private WebElement dashboardHoSoNhanVien_Staff;
+
+	@FindBy(how = How.XPATH, using = "//a[@href='//danhsachdonhang-staff']")
+	private WebElement dashboardCongViec;
+
+	@FindBy(how = How.CLASS_NAME, using = "logout-button")
+	private WebElement logoutBtn;
+
+	//CUSTOMER
 	@FindBy(how = How.XPATH, using = "//a[text()='Trang chủ']")
 	private WebElement trangChu;
 
@@ -49,6 +88,50 @@ public class CommonComponents extends BasePage {
 	@FindBy(how = How.XPATH, using = "//a[text()='Giỏ hàng']")
 	private WebElement gioHang;
 
+
+	//Admin
+	public void clickDashBoardQuanLyTaiKhoan(){
+		clickElement(dashboardQuanLyTaiKhoan);
+	}
+
+	//Trang quản lý
+	public void clickDashBoardHoSoNhanVien(){
+		clickElement(dashboardHoSoNhanVien_Manager);
+	}
+	public void clickDashBoardThongKe(){
+		clickElement(dashboardThongKe);
+	}
+	public void clickDashBoardDonHang(){
+		clickElement(dashboardDonHang);
+	}
+	public void clickDashBoardNhanVien(){
+		clickElement(dashboardNhanVien);
+	}
+	public void clickDashBoardDanhSachMo(){
+		clickElement(dashboardDanhSachMo);
+	}
+	public void clickDashBoardPhanHoiKhachHang(){
+		clickElement(dashboardPhanHoiKhachHang);
+	}
+	public void clickDashBoardGiaoViec(){
+		clickElement(dashboardGiaoViec);
+	}
+	public void clickDashBoardThanhToan(){
+		clickElement(dashboardThanhToan);
+	}
+
+	//STAFF
+	public void clickHoSoNhanVienStaff(){
+		clickElement(dashboardHoSoNhanVien_Staff);
+	}
+	public void clickCongViec(){
+		clickElement(dashboardCongViec);
+	}
+	public void clickLogoutButton(){
+		clickElement(logoutBtn);
+	}
+
+	// CUSTOMER
 	public void clickTrangChu(){
 		clickElement(trangChu);
 	}

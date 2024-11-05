@@ -23,18 +23,14 @@ public class CartPage extends BasePage {
     @FindBy(how = How.CLASS_NAME, using = "cart-page-item-checkbox")
     List<WebElement> itemList;
 
-
     public void clickSelectAllCheckbox(){
         if(!selectAllCheckbox.isSelected()){
             clickElement(selectAllCheckbox);
         }
-
     }
-
     public void clickPaymentButton(){
         clickElement(paymentBtn);
     }
-
     public void getCartItems(int index) {
         if (index >= 0 && index < itemList.size()) {
             WebElement service = itemList.get(index);

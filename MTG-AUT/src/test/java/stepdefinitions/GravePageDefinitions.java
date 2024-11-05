@@ -19,17 +19,17 @@ public class GravePageDefinitions extends BaseTest {
         this.grave = new RelativeGrave(driver);
     }
 
-    @And("User clicks the Book Service button")
+    @And("user clicks the Book Service button")
     public void userClicksTheBookServiceButton() {
         graveDetail.clickBookService();
     }
 
-    @When("User clicks the Grave details button")
+    @When("user clicks the Grave details button")
     public void userClicksGraveDetailsButton() {
         grave.clickChiTiet();
     }
 
-    @Then("User should see the service booking confirmation")
+    @Then("user should see the service booking confirmation")
     public void userShouldSeeTheServiceBookingConfirmation() {
         // Add assertions or checks to verify that the service booking confirmation is displayed
     }

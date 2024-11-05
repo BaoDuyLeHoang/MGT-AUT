@@ -1,6 +1,7 @@
 package tests;
 
 import core.BaseTest;
+import core.DataProviderUtils;
 import page.*;
 
 public class Test extends BaseTest {
@@ -18,7 +19,12 @@ public class Test extends BaseTest {
         RelativeGrave relativeGrave = new RelativeGrave(getDriver());
         GraveDetail graveDetail = new GraveDetail(getDriver());
 
-
+        loginPage.clickRegister();
+        loginPage.sendTel("123123123");
+        loginPage.sendPassword("123123123");
+        loginPage.sendConfirmPassword("123123123");
+        Thread.sleep(5000);
+/*
         loginPage.sendText("0201030293");
         loginPage.sendPassword("00635259");
         loginPage.clickLoginButton();
@@ -31,12 +37,12 @@ public class Test extends BaseTest {
         Thread.sleep(1000);
 
         graveDetail.clickBookService();
-        Thread.sleep(1000);
+        Thread.sleep(1000);*/
 
         //servicePage.getDichVuTheoTheLoai(0);
 
 
-        commonComponents.clickUserIcon();
+        /*commonComponents.clickUserIcon();
         commonComponents.clickGioHang();
         Thread.sleep(1000);
 
@@ -47,7 +53,14 @@ public class Test extends BaseTest {
 
         checkoutPage.getTextPaymentMethod("Thanh toán tiền mặt");
         checkoutPage.sendDateValue("12-30-2024"); //  (mm/dd/yyyy)
-        checkoutPage.clickCheckoutButton();
+        checkoutPage.clickCheckoutButton();*/
 
+    }
+    @org.testng.annotations.Test(dataProviderClass = DataProviderUtils.class, dataProvider = "TestData")
+    public void LoginWithCustomer(String email, String password) {
+        BaseTest.getDriver().navigate().to(url);
+        LoginPage loginPage = new LoginPage(getDriver());
+        loginPage.sendText(email);
+        loginPage.sendPassword(password);
     }
 }

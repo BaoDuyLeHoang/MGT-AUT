@@ -34,6 +34,7 @@ public class CheckoutPage extends BasePage {
             throw new IndexOutOfBoundsException("Index out of bounds for paymentMethodList");
         }
     }
+
     public void getTextPaymentMethod(String input) {
         if(input.contains("Thanh toán tiền mặt")){
             input = "cash";
@@ -45,7 +46,6 @@ public class CheckoutPage extends BasePage {
             }
         }
     }
-
 
     public void sendDateValue(String date) {
         dateInput.clear();

@@ -18,53 +18,53 @@ public class CommonComponentsStepDefinitions extends BaseTest {
     }
 
 
-    @Given("User enter the URL {string}")
+    @Given("user enter the URL {string}")
     public void user_enter_the_url(String url) {
         BaseTest.getDriver().navigate().to(url);
     }
 
-    @When("User clicks on Home Page")
+    @When("user clicks on Home Page")
     public void userClicksOnHomePage() {
         commonComponents.clickTrangChu(); 
     }
 
-    @When("User clicks on Introduce")
+    @When("user clicks on Introduce")
     public void userClicksOnIntroduce() {
         commonComponents.clickGioiThieu(); 
     }
 
-    @When("User clicks on Service")
+    @When("user clicks on Service")
     public void userClicksOnService() {
         commonComponents.clickDichVu(); 
     }
 
-    @When("User clicks on Search Grave")
+    @When("user clicks on Search Grave")
     public void userClicksOnSearchGrave() {
         commonComponents.clickTimKiemMo(); 
     }
 
-    @When("User clicks on Contact")
+    @When("user clicks on Contact")
     public void userClicksOnContact() {
         commonComponents.clickLienHe(); 
     }
 
-    @When("User clicks on User Icon")
+    @When("user clicks on User Icon")
     public void userClicksOnUserIcon() {
         commonComponents.clickUserIcon(); 
     }
 
-    @And("User clicks on Cart")
+    @And("user clicks on Cart")
     public void userClicksOnCart() throws InterruptedException{
         commonComponents.clickGioHang();
         Thread.sleep(500);
     }
 
-    @Then("User clicks Relative Grave")
+    @Then("user clicks Relative Grave")
     public void userClicksOnRelativeGrave() {
         commonComponents.clickMoNguoiThan();
     }
 
-    @Then("User should see the profile section")
+    @Then("user should see the profile section")
     public void userShouldSeeTheProfileSection() {
         
     }

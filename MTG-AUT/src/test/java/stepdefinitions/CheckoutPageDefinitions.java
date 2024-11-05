@@ -15,27 +15,27 @@ public class CheckoutPageDefinitions extends BaseTest {
         this.checkoutPage = new CheckoutPage(driver);
     }
 
-    @When("User selects the payment method at index {int}")
+    @When("user selects the payment method at index {int}")
     public void userSelectsThePaymentMethod(int index) {
         checkoutPage.getPaymentMethod(index);
     }
 
-    @When("User selects {string} Payment button")
+    @When("user selects {string} Payment button")
     public void userSelectsThePaymentMethodWithName(String input) {
         checkoutPage.getTextPaymentMethod(input);
     }
 
-    @When("User enters the date {string}")
+    @When("user enters the date {string}")
     public void userEntersTheDate(String date) {
         checkoutPage.sendDateValue(date);
     }
 
-    @When("User clicks the Checkout button")
+    @When("user clicks the Checkout button")
     public void userClicksTheCheckoutButton() {
         checkoutPage.clickCheckoutButton();
     }
 
-    @Then("User should see the confirmation message")
+    @Then("user should see the confirmation message")
     public void userShouldSeeTheConfirmationMessage() {
         
     }
