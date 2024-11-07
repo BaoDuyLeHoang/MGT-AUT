@@ -35,4 +35,9 @@ public class ServiceDetailPageDefinitions extends BaseTest {
         serviceDetailPage.clickAddButton(); 
     }
 
+    @Then("user see notification successfull")
+    public void userSeeNotificationSuccessfull() {
+        serviceDetailPage.isThongBaoDisplayed();
+    }
+
 } 

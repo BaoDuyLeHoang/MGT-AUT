@@ -13,6 +13,15 @@ public class StaffPage extends BasePage {
         super(driver);
     }
 
+    @FindBy(how = How.CLASS_NAME, using = "blog-mgmt-create-button")
+    private WebElement createBlogButton;
+
+    @FindBy(how = How.XPATH, using = "//div[@class='blog-mgmt-filter']/select")
+    private WebElement blogStatusSelector;
+
+    @FindBy(how = How.CSS, using = "action-button.edit")
+    private WebElement editButton;
+
     @FindBy(how = How.XPATH, using = "//button[text()='Tất cả']")
     private WebElement allTask;
 
@@ -22,12 +31,5 @@ public class StaffPage extends BasePage {
     @FindBy(how = How.XPATH, using = "//button[text()='Chưa hoàn thành']")
     private WebElement taskImcomplete;
 
-    @FindBy(how = How.CSS, using = "input[type='text'][0]")
-    private List<WebElement> dateList;
 
-    public void sendDate(String startDate, String endDate){
-        for(WebElement date : dateList){
-
-        }
-    }
 }

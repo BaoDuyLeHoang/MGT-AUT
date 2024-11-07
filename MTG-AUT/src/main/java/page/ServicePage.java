@@ -20,6 +20,8 @@ public class ServicePage extends BasePage {
     @FindBy(how = How.CLASS_NAME, using = "sell-service-card")
     List<WebElement> serviceList;
 
+
+
     @FindBy(how = How.CLASS_NAME, using = "sl-add-to-cart-button")
     List<WebElement> dichvutheotheloaiList;
 
@@ -45,5 +47,6 @@ public class ServicePage extends BasePage {
     public void getServiceByName(String name) {
         getTextFromList(dichvutheotheloaiList, "text", name);
     }
+
 
 }

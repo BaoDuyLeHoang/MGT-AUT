@@ -21,8 +21,9 @@ public class CartPageDefinitions extends BaseTest {
     }
 
     @When("user clicks the Payment button")
-    public void userClicksThePaymentButton() {
+    public void userClicksThePaymentButton()throws InterruptedException{
         cartPage.clickPaymentButton();
+        Thread.sleep(500);
     }
 
     @When("user selects the cart item at index {int}")

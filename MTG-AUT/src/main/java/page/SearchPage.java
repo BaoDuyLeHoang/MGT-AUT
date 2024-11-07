@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import java.util.List;
+
 public class SearchPage extends BasePage {
 
     public SearchPage(WebDriver driver) {
@@ -26,6 +28,21 @@ public class SearchPage extends BasePage {
 
     @FindBy(how = How.CLASS_NAME, using = "search-button")
     private WebElement btnSearch;
+
+    @FindBy(how = How.CSS, using = "div.search-result__card")
+    List<WebElement> listSearchResult;
+
+    public void clickSearchResultIndex(int index) {
+
+        if (index >= 0 && index < listSearchResult.size()) {
+            WebElement item = listSearchResult.get(index);
+            this.isElementVisibility(item);
+            item.click();
+        } else {
+            throw new IndexOutOfBoundsException("Index out of bounds for paymentMethodList");
+        }
+    }
+
 
     public void sendTextToName(String name){
         enterText(inputName, name);

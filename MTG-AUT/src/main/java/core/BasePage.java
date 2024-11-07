@@ -45,7 +45,6 @@ public class BasePage {
 	}
 
 	public void getTextFromList(List<WebElement> _list ,String type, String input) {
-
 		for (WebElement list : _list) {
 			String listText = list.getAttribute(type);
 			if (listText.contains(input)) {

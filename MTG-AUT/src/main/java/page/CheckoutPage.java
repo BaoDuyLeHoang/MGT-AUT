@@ -18,7 +18,7 @@ public class CheckoutPage extends BasePage {
     @FindBy(how = How.CSS, using = "input[type='radio']")
     private List<WebElement> paymentMethodList;
 
-    @FindBy(how = How.CSS, using = "input[type='date']")
+    @FindBy(how = How.CLASS_NAME, using = "form-control")
     private WebElement dateInput;
 
     @FindBy(how = How.CLASS_NAME, using = "checkout-button")

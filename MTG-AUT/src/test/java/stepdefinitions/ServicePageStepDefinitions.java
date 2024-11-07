@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +21,7 @@ public class ServicePageStepDefinitions extends BaseTest {
         servicePage.getService(index);
     }
 
-    @Then("user selects the service by category at index {int}")
+    @And("user selects the service by category at index {int}")
     public void userSelectsTheServiceByCategoryAtIndex(int index) {
         servicePage.getDichVuTheoTheLoai(index);
     }

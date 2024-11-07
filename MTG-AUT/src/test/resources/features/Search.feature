@@ -4,16 +4,16 @@ Feature: Search Grave
   So that I can find information about deceased individuals
 
   Background:
-    Given User enter the URL "http://localhost:3000/tim-kiem-mo"
+    Given user enter the URL "http://localhost:3000/tim-kiem-mo"
 
   @search
   Scenario Outline: Search for a grave with various criteria
-    When User enters "<name>" in the name field
-    And User enters "<birthYear>" in the birth year field
-    And User enters "<deathYear>" in the death year field
-    And User enters "<homeTown>" in the hometown field
-    And User clicks the search button
-    Then User should see search results for "<name>"
+    When user enters "<name>" in the name field
+    And user enters "<birthYear>" in the birth year field
+    And user enters "<deathYear>" in the death year field
+    And user enters "<homeTown>" in the hometown field
+    And user clicks the search button
+    Then user should see search results for "<name>"
 
     Examples:
       | name                 | birthYear | deathYear | homeTown    |

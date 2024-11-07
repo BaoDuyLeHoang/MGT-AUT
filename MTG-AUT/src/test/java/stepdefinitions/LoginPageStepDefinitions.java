@@ -55,7 +55,7 @@ public class LoginPageStepDefinitions extends BaseTest {
     }
     @When("user login with staff")
     public void userLoginWithStaff() throws IOException {
-        loginPage.loginWithData("data/LoginWithCustomer1.xlsx");
+        loginPage.loginWithData("data/LoginWithStaff.xlsx");
     }
     @When("user login with manager")
     public void userLoginWithManager() throws IOException {

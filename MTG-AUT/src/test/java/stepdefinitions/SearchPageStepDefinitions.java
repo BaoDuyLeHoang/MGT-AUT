@@ -1,28 +1,33 @@
 package stepdefinitions;
 
+import core.BaseTest;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 import page.SearchPage;
 
 import static core.BaseTest.getDriver;
 
-public class SearchPageStepDefinitions {
+public class SearchPageStepDefinitions extends BaseTest {
     private SearchPage searchPage;
+    private WebDriver driver;
 
-    // Constructor to initialize WebDriver
     public SearchPageStepDefinitions() {
-        this.searchPage = new SearchPage(getDriver());
+        this.driver = getDriver();
+        this.searchPage = new SearchPage(driver);
     }
 
-    @When("user enters {string} in the name field")
+    @And("user enters {string} in the name field")
     public void userEntersInTheNameField(String name) {
         searchPage.sendTextToName(name);
     }
-    @When("user enters {string} in the birth year field")
+    @And("user enters {string} in the birth year field")
     public void userEntersInTheBirthYearField(String birthYear) {
         searchPage.sendTextToBirthYear(birthYear);
     }
-    @When("user enters {string} in the death year field")
+    @And("user enters {string} in the death year field")
     public void userEntersInTheDeathYearField(String deathYear) {
         searchPage.sendTextToDeathYear(deathYear);
     }
@@ -32,14 +37,16 @@ public class SearchPageStepDefinitions {
         searchPage.sendTextToHomeTown(homeTown);
     }
 
-    @When("user clicks the search button")
-    public void userClicksTheSearchButton() {
+    @And("user clicks the search button")
+    public void userClicksTheSearchButton() throws InterruptedException {
         searchPage.tapButtonSearch();
+        Thread.sleep(500);
     }
 
-    @Then("user should see search results for {string}")
-    public void userShouldSeeSearchResultsFor(String name) {
-
+    @And("user click search result at index {int}")
+    public void userClickSearchResultAtIndex(int index) throws InterruptedException{
+        searchPage.clickSearchResultIndex(index);
+        Thread.sleep(500);
     }
 
     @When("user clears all search fields")

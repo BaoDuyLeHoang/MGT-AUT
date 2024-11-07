@@ -3,6 +3,7 @@ package stepdefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import core.BaseTest;
 import page.GraveDetail;
@@ -24,13 +25,13 @@ public class GravePageDefinitions extends BaseTest {
         graveDetail.clickBookService();
     }
 
-    @When("user clicks the Grave details button")
+    @Then("user clicks the Grave details button")
     public void userClicksGraveDetailsButton() {
         grave.clickChiTiet();
     }
 
-    @Then("user should see the service booking confirmation")
-    public void userShouldSeeTheServiceBookingConfirmation() {
-        // Add assertions or checks to verify that the service booking confirmation is displayed
+    @Then("user should see search results for {string}")
+    public void userShouldSeeNameOfGraveSelected(String name) {
+        Assert.assertTrue(graveDetail.checkNameGrave(name));
     }
 } 

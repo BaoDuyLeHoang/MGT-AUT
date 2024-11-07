@@ -14,7 +14,19 @@ public class GraveDetail extends BasePage {
     @FindBy(how = How.CLASS_NAME, using = "book-service-button")
     private WebElement bookServiceBtn;
 
+    @FindBy(how = How.CLASS_NAME, using = "info-item")
+    private WebElement info;
+
     public void clickBookService(){
         clickElement(bookServiceBtn);
+    }
+
+    public Boolean checkNameGrave(String name){
+        if(info.getText().contains(name)){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }

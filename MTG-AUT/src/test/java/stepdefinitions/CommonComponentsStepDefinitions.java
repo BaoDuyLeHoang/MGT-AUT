@@ -55,12 +55,14 @@ public class CommonComponentsStepDefinitions extends BaseTest {
 
     @And("user clicks on Cart")
     public void userClicksOnCart() throws InterruptedException{
+        commonComponents.clickUserIcon();
         commonComponents.clickGioHang();
         Thread.sleep(500);
     }
 
-    @Then("user clicks Relative Grave")
+    @And("user clicks Relative Grave")
     public void userClicksOnRelativeGrave() {
+        commonComponents.clickUserIcon();
         commonComponents.clickMoNguoiThan();
     }
 

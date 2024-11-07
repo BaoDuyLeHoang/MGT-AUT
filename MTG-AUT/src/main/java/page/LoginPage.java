@@ -17,7 +17,7 @@ public class LoginPage extends BasePage{
         super(driver);
     }
 
-     @FindBy(how = How.CSS, using = "input[type='text']")
+    @FindBy(how = How.CSS, using = "input[type='text']")
     private WebElement text;
 
     @FindBy(how = How.CSS, using = "input[type='password']")

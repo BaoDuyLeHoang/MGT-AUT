@@ -26,6 +26,12 @@ public class ServiceDetailPage extends BasePage {
     @FindBy(how = How.CLASS_NAME, using = "add-to-cart")
     private WebElement btnAdd; // Locate the select element
 
+    @FindBy(how = How.CSS, using = ".MuiAlert-message.css-1pxa9xg-MuiAlert-message")
+    private WebElement thongBao;
+
+    public void isThongBaoDisplayed(){
+        this.isElementVisibility(thongBao,500);
+    }
 
     // Method to select an option by value
     public void selectGraveOption(String value) {
