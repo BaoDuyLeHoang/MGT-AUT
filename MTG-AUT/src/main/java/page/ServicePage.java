@@ -35,7 +35,7 @@ public class ServicePage extends BasePage {
         }
     }
 
-    public void getDichVuTheoTheLoai(int index) {
+    public void getDichVuTheoTheLoai(int index)  {
         if (index >= 0 && index < dichvutheotheloaiList.size()) {
             WebElement service = dichvutheotheloaiList.get(index);
             this.isElementVisibility(service);

@@ -44,11 +44,14 @@ public class CommonComponents extends BasePage {
 	@FindBy(how = How.XPATH, using = "//a[@href='/danhsachthanhtoan']")
 	private WebElement dashboardThanhToan;
 
+	@FindBy(how = How.XPATH, using = "//a[@href='/blog-manager']")
+	private WebElement dashboardBlog;
+
 	//STAFF
-	@FindBy(how = How.XPATH, using = "//a[@href='//profilestaff-staff']")
+	@FindBy(how = How.XPATH, using = "//a[@href='/profilestaff-staff']")
 	private WebElement dashboardHoSoNhanVien_Staff;
 
-	@FindBy(how = How.XPATH, using = "//a[@href='//danhsachdonhang-staff']")
+	@FindBy(how = How.XPATH, using = "//a[@href='/danhsachdonhang-staff']")
 	private WebElement dashboardCongViec;
 
 	@FindBy(how = How.CLASS_NAME, using = "logout-button")
@@ -118,6 +121,9 @@ public class CommonComponents extends BasePage {
 	}
 	public void clickDashBoardThanhToan(){
 		clickElement(dashboardThanhToan);
+	}
+	public void clickDashBoardBlog(){
+		clickElement(dashboardBlog);
 	}
 
 	//STAFF
