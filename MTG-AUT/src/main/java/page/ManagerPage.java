@@ -41,11 +41,34 @@ public class ManagerPage extends BasePage {
                     return;
                 }
             }
-
         } catch (NoSuchElementException e) {
             System.out.println("No element found at the specified index.");
         } catch (IndexOutOfBoundsException e) {
             throw new IndexOutOfBoundsException("Index out of bounds for blogList");
+        }
+    }
+
+    @FindBy(how = How.XPATH, using = "//table[@class='staff-table']/tbody/tr")
+    List<WebElement> staffList;
+
+
+    public void clickStaffButtonByName(String staffName, String action) {
+        try {
+            for (WebElement row : staffList) {
+                WebElement nameCell = row.findElement(By.xpath(".//td[2]"));
+
+                if (nameCell.getText().equalsIgnoreCase(staffName)) {
+                    WebElement button = row.findElement(By.xpath(".//button[@title='" + action + "']"));
+
+                    this.isElementVisibility(button);
+                    clickElement(button);
+                    break;
+                }
+            }
+
+
+        } catch (NoSuchElementException e) {
+            System.out.println("No button with title '" + action + "' found for staff member '" + staffName + "'.");
         }
     }
 

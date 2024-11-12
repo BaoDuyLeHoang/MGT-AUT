@@ -1,0 +1,16 @@
+[INFO ] 12-11-2024 23:55:43 [main] Log - Start automation test
+[INFO ] 12-11-2024 23:55:44 [main] Log - Feature: "Search Grave"
+[INFO ] 12-11-2024 23:55:44 [main] Log - Scenario"Search for a grave with various criteria"
+[INFO ] 12-11-2024 23:55:49 [main] Log - SUCCESS: cucumberoptions.SearchPageRunner
+[INFO ] 12-11-2024 23:55:49 [main] Log - Feature: "Search Grave"
+[INFO ] 12-11-2024 23:55:49 [main] Log - Scenario"Search with only name"
+[ERROR] 12-11-2024 23:55:54 [main] Log - FAIL: cucumberoptions.SearchPageRunner
+[INFO ] 12-11-2024 23:55:54 [main] Log - Feature: "Search Grave"
+[INFO ] 12-11-2024 23:55:54 [main] Log - Scenario"Search with name and birth year"
+[ERROR] 12-11-2024 23:55:58 [main] Log - FAIL: cucumberoptions.SearchPageRunner
+[INFO ] 12-11-2024 23:55:58 [main] Log - Finish automation test
+[INFO ] 13-11-2024 00:10:51 [main] Log - Start automation test
+[INFO ] 13-11-2024 00:10:52 [main] Log - class cucumberoptions.LoginTestRunner
+[INFO ] 13-11-2024 00:10:57 [main] Log - "Successful login with valid credentials"
+[INFO ] 13-11-2024 00:10:57 [main] Log - SUCCESS: cucumberoptions.LoginTestRunner
+[INFO ] 13-11-2024 00:10:57 [main] Log - Finish automation test

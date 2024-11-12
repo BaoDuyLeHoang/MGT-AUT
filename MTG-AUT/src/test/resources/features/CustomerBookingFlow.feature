@@ -9,7 +9,7 @@ Feature: Main Flow of the Application
     And user enters "<name>" in the name field
     And user clicks the search button
     And user click search result at index 0
-    Then user should see search results for "<name>"
+    Then user should see "<name>" of grave
 
     When user clicks the Book Service button
     Then user selects the service by category at index 0

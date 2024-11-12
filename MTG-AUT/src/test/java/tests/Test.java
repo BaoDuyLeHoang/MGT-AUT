@@ -2,11 +2,14 @@ package tests;
 
 import core.BaseTest;
 import core.DataProviderUtils;
+import core.Log;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import page.*;
 
 public class Test extends BaseTest {
 
-    String url = "http://localhost:3000/login";
+    String url = "http://localhost:3000/tim-kiem-mo";
     @org.testng.annotations.Test
     public void TestAuto() throws InterruptedException {
         BaseTest.getDriver().navigate().to(url);
@@ -21,9 +24,14 @@ public class Test extends BaseTest {
         SearchPage searchPage = new SearchPage(getDriver());
         ManagerPage managerPage = new ManagerPage(getDriver());
 
-        loginPage.loginWithData("data/LoginWithManager.xlsx");
-        commonComponents.clickDashBoardBlog();
-        managerPage.clickBlogList(1,"Duyệt");
+        searchPage.sendTextToName("a");
+        searchPage.tapButtonSearch();
+        searchPage.checkNameSearch("a");
+
+/*        loginPage.loginWithData("data/LoginWithManager.xlsx");
+        commonComponents.clickDashBoardNhanVien();
+        managerPage.clickStaffButtonByName("Staff1","Vô hiệu hóa");*/
+        //managerPage.clickBlogList(1,"Duyệt");
         /*commonComponents.clickTimKiemMo();*/
         /*searchPage.sendTextToName("Giót");
         searchPage.tapButtonSearch();
@@ -37,6 +45,15 @@ public class Test extends BaseTest {
         /*checkoutPage.getTextPaymentMethod("Thanh toán tiền mặt");
         checkoutPage.sendDateValue("12-30-2024"); //  (mm/dd/yyyy)
         checkoutPage.clickCheckoutButton();*/
+    }
+    @AfterMethod
+    public void takeSreenShot(ITestResult result) throws InterruptedException {
+        Log.info(result.getName());
 
+        Thread.sleep(1000);
+
+        if(ITestResult.FAILURE == result.getStatus()){
+           Log.error(result.getName());
+        }
     }
 }

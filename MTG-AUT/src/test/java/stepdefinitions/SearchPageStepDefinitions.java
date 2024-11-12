@@ -51,12 +51,11 @@ public class SearchPageStepDefinitions extends BaseTest {
 
     @When("user clears all search fields")
     public void userClearsAllSearchFields() {
-        // Implement method to clear all fields
-        // This might involve calling clear() on each WebElement
+        searchPage.clearSearch();
     }
-    @Then("All search fields should be empty")
-    public void allSearchFieldsShouldBeEmpty() {
-        // Implement verification that all fields are empty
-        // This might involve checking the value attribute of each input field
+
+    @Then("user should see search results for {string}")
+    public void userSeeResults(String name) {
+        Assert.assertTrue(searchPage.checkNameSearch(name));
     }
 }

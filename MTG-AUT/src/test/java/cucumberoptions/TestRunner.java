@@ -1,14 +1,14 @@
 package cucumberoptions;
 
+import core.Log;
+import core.TestListener;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;
 import io.cucumber.testng.TestNGCucumberRunner;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
+@Listeners(TestListener.class)
 @CucumberOptions(features = "src/test/resources/features", glue = "stepdefinitions", 
 		plugin = { 
 		"pretty",
@@ -28,8 +28,11 @@ public class TestRunner {
 		// Phương thức này chạy các scenarios
 		@Test(description = "Run Cucumber Features", dataProvider = "scenarios")  
 	    public void feature(PickleWrapper pickleWrapper, FeatureWrapper cucumberFeature) {  
+			//Ghi log trước khi chạy kịch bản
+			Log.info("Feature: " +cucumberFeature);
+			Log.info("Scenario" +pickleWrapper);
 			// Chạy một kịch bản riêng lẻ bằng cách lấy pickle từ PickleWrapper
-	        testNGCucumberRunner.runScenario(pickleWrapper.getPickle());  
+			testNGCucumberRunner.runScenario(pickleWrapper.getPickle());
 	    }
 		
 		// DataProvider cung cấp các scenarios cho phương thức kiểm thử  

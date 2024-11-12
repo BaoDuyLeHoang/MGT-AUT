@@ -1,6 +1,7 @@
 package page;
 
 import core.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -43,6 +44,15 @@ public class SearchPage extends BasePage {
         }
     }
 
+    public Boolean checkNameSearch(String name){
+        for(WebElement list : listSearchResult){
+            WebElement check = list.findElement(By.xpath(".//h2"));
+            if(check.getText().contains(name)){
+                return true;
+            }
+        }
+        return false;
+    }
 
     public void sendTextToName(String name){
         enterText(inputName, name);
@@ -57,6 +67,12 @@ public class SearchPage extends BasePage {
         enterText(inputHomeTown, homeTown);
     }
 
+    public void clearSearch(){
+        inputName.clear();
+        inputBirthYear.clear();
+        inputDeathYear.clear();
+        inputHomeTown.clear();
+    }
     public void tapButtonSearch(){
         this.isElementVisibility(btnSearch);
         clickElement(btnSearch);
