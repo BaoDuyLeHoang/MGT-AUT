@@ -1,14 +1,15 @@
 package cucumberoptions;
 
-import core.Log;
-import core.TestListener;
+import listeners.ReportListener;
+import logs.Log;
+import listeners.TestListener;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;
 import io.cucumber.testng.TestNGCucumberRunner;
 import org.testng.annotations.*;
 
-@Listeners(TestListener.class)
+@Listeners(ReportListener.class)
 @CucumberOptions(
     features = "src/test/resources/features",
     glue = "stepdefinitions",

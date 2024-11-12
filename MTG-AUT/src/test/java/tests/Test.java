@@ -1,12 +1,14 @@
 package tests;
 
 import core.BaseTest;
-import core.DataProviderUtils;
-import core.Log;
+import listeners.ReportListener;
+import logs.Log;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Listeners;
 import page.*;
 
+@Listeners(ReportListener.class)
 public class Test extends BaseTest {
 
     String url = "http://localhost:3000/tim-kiem-mo";
@@ -48,12 +50,6 @@ public class Test extends BaseTest {
     }
     @AfterMethod
     public void takeSreenShot(ITestResult result) throws InterruptedException {
-        Log.info(result.getName());
 
-        Thread.sleep(1000);
-
-        if(ITestResult.FAILURE == result.getStatus()){
-           Log.error(result.getName());
-        }
     }
 }

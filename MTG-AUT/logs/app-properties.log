@@ -1,16 +1,83 @@
-[INFO ] 12-11-2024 23:55:43 [main] Log - Start automation test
-[INFO ] 12-11-2024 23:55:44 [main] Log - Feature: "Search Grave"
-[INFO ] 12-11-2024 23:55:44 [main] Log - Scenario"Search for a grave with various criteria"
-[INFO ] 12-11-2024 23:55:49 [main] Log - SUCCESS: cucumberoptions.SearchPageRunner
-[INFO ] 12-11-2024 23:55:49 [main] Log - Feature: "Search Grave"
-[INFO ] 12-11-2024 23:55:49 [main] Log - Scenario"Search with only name"
-[ERROR] 12-11-2024 23:55:54 [main] Log - FAIL: cucumberoptions.SearchPageRunner
-[INFO ] 12-11-2024 23:55:54 [main] Log - Feature: "Search Grave"
-[INFO ] 12-11-2024 23:55:54 [main] Log - Scenario"Search with name and birth year"
-[ERROR] 12-11-2024 23:55:58 [main] Log - FAIL: cucumberoptions.SearchPageRunner
-[INFO ] 12-11-2024 23:55:58 [main] Log - Finish automation test
-[INFO ] 13-11-2024 00:10:51 [main] Log - Start automation test
-[INFO ] 13-11-2024 00:10:52 [main] Log - class cucumberoptions.LoginTestRunner
-[INFO ] 13-11-2024 00:10:57 [main] Log - "Successful login with valid credentials"
-[INFO ] 13-11-2024 00:10:57 [main] Log - SUCCESS: cucumberoptions.LoginTestRunner
-[INFO ] 13-11-2024 00:10:57 [main] Log - Finish automation test
+[INFO ] 13-11-2024 01:40:26 [main] Log - Start automation test
+[INFO ] 13-11-2024 01:40:27 [main] Log - Feature: "Search Grave"
+[INFO ] 13-11-2024 01:40:27 [main] Log - Scenario"Search for a grave with various criteria"
+[INFO ] 13-11-2024 01:40:32 [main] Log - SUCCESS: cucumberoptions.SearchPageRunner
+[INFO ] 13-11-2024 01:40:32 [main] Log - Feature: "Search Grave"
+[INFO ] 13-11-2024 01:40:32 [main] Log - Scenario"Search with only name"
+[ERROR] 13-11-2024 01:40:36 [main] Log - FAIL: cucumberoptions.SearchPageRunner
+[INFO ] 13-11-2024 01:40:36 [main] Log - Feature: "Search Grave"
+[INFO ] 13-11-2024 01:40:36 [main] Log - Scenario"Search with name and birth year"
+[ERROR] 13-11-2024 01:40:40 [main] Log - FAIL: cucumberoptions.SearchPageRunner
+[INFO ] 13-11-2024 01:40:40 [main] Log - Finish automation test
+[INFO ] 13-11-2024 01:43:16 [main] Log - Start testing MTG-AUT
+[INFO ] 13-11-2024 01:43:16 [main] Log - feature test is starting...
+[INFO ] 13-11-2024 01:43:16 [main] Log - Feature: "Search Grave"
+[INFO ] 13-11-2024 01:43:16 [main] Log - Scenario"Search for a grave with various criteria"
+[INFO ] 13-11-2024 01:43:22 [main] Log - feature test is passed.
+[INFO ] 13-11-2024 01:43:22 [main] Log - feature test is starting...
+[INFO ] 13-11-2024 01:43:22 [main] Log - Feature: "Search Grave"
+[INFO ] 13-11-2024 01:43:22 [main] Log - Scenario"Search with only name"
+[ERROR] 13-11-2024 01:43:26 [main] Log - feature test is failed.
+[ERROR] 13-11-2024 01:43:26 [main] Log - feature test is failed.
+[INFO ] 13-11-2024 01:43:26 [main] Log - End testing MTG-AUT
+[INFO ] 13-11-2024 01:48:29 [main] Log - Start testing MTG-AUT
+[INFO ] 13-11-2024 01:48:29 [main] Log - feature test is starting...
+[INFO ] 13-11-2024 01:48:30 [main] Log - Feature: "Search Grave"
+[INFO ] 13-11-2024 01:48:30 [main] Log - Scenario"Search for a grave with various criteria"
+[INFO ] 13-11-2024 01:48:35 [main] Log - feature test is passed.
+[INFO ] 13-11-2024 01:48:35 [main] Log - feature test is starting...
+[INFO ] 13-11-2024 01:48:35 [main] Log - Feature: "Search Grave"
+[INFO ] 13-11-2024 01:48:35 [main] Log - Scenario"Search with only name"
+[ERROR] 13-11-2024 01:48:39 [main] Log - cucumberoptions.SearchPageRunner test is failed.
+[ERROR] 13-11-2024 01:48:39 [main] Log - cucumberoptions.SearchPageRunner test is failed.
+[INFO ] 13-11-2024 01:48:39 [main] Log - End testing MTG-AUT
+[INFO ] 13-11-2024 01:51:54 [main] Log - Start testing MTG-AUT
+[INFO ] 13-11-2024 01:51:55 [main] Log - feature test is starting...
+[INFO ] 13-11-2024 01:51:55 [main] Log - Feature: "Search Grave"
+[INFO ] 13-11-2024 01:51:55 [main] Log - Scenario"Search with only name"
+[ERROR] 13-11-2024 01:52:08 [main] Log - cucumberoptions.SearchPageRunner test is failed.
+[ERROR] 13-11-2024 01:52:08 [main] Log - cucumberoptions.SearchPageRunner test is failed.
+[INFO ] 13-11-2024 01:52:08 [main] Log - End testing MTG-AUT
+[INFO ] 13-11-2024 01:52:26 [main] Log - Start testing MTG-AUT
+[INFO ] 13-11-2024 01:52:27 [main] Log - feature test is starting...
+[INFO ] 13-11-2024 01:52:27 [main] Log - Feature: "Search Grave"
+[INFO ] 13-11-2024 01:52:27 [main] Log - Scenario"Search with only name"
+[ERROR] 13-11-2024 01:52:32 [main] Log - cucumberoptions.SearchPageRunner test is failed.
+[ERROR] 13-11-2024 01:52:32 [main] Log - cucumberoptions.SearchPageRunner test is failed.
+[INFO ] 13-11-2024 01:52:32 [main] Log - End testing MTG-AUT
+[INFO ] 13-11-2024 01:55:41 [main] Log - Start testing MTG-AUT
+[INFO ] 13-11-2024 01:55:41 [main] Log - feature test is starting...
+[INFO ] 13-11-2024 01:55:42 [main] Log - Feature: "Search Grave"
+[INFO ] 13-11-2024 01:55:42 [main] Log - Scenario"Search with only name"
+[ERROR] 13-11-2024 01:55:46 [main] Log - cucumberoptions.SearchPageRunner test is failed.
+[INFO ] 13-11-2024 01:55:46 [main] Log - End testing MTG-AUT
+[INFO ] 13-11-2024 01:58:19 [main] Log - Start testing MTG-AUT
+[INFO ] 13-11-2024 01:58:20 [main] Log - feature test is starting...
+[INFO ] 13-11-2024 01:58:20 [main] Log - Feature: "Search Grave"
+[INFO ] 13-11-2024 01:58:20 [main] Log - Scenario"Search with only name"
+[ERROR] 13-11-2024 01:58:25 [main] Log - cucumberoptions.SearchPageRunner test is failed.
+[INFO ] 13-11-2024 01:58:25 [main] Log - End testing MTG-AUT
+[INFO ] 13-11-2024 02:03:28 [main] Log - Start testing MTG-AUT
+[INFO ] 13-11-2024 02:03:29 [main] Log - feature test is starting...
+[INFO ] 13-11-2024 02:03:29 [main] Log - Feature: "Search Grave"
+[INFO ] 13-11-2024 02:03:29 [main] Log - Scenario"Search with only name"
+[ERROR] 13-11-2024 02:03:34 [main] Log - cucumberoptions.SearchPageRunner test is failed.
+[INFO ] 13-11-2024 02:03:34 [main] Log - End testing MTG-AUT
+[INFO ] 13-11-2024 02:05:57 [main] Log - Start testing MTG-AUT
+[INFO ] 13-11-2024 02:05:57 [main] Log - feature test is starting...
+[INFO ] 13-11-2024 02:05:58 [main] Log - Feature: "Search Grave"
+[INFO ] 13-11-2024 02:05:58 [main] Log - Scenario"Search with only name"
+[ERROR] 13-11-2024 02:06:02 [main] Log - cucumberoptions.SearchPageRunner test is failed.
+[INFO ] 13-11-2024 02:06:03 [main] Log - End testing MTG-AUT
+[INFO ] 13-11-2024 02:08:32 [main] Log - Start testing MTG-AUT
+[INFO ] 13-11-2024 02:08:33 [main] Log - feature test is starting...
+[INFO ] 13-11-2024 02:08:33 [main] Log - Feature: "Search Grave"
+[INFO ] 13-11-2024 02:08:33 [main] Log - Scenario"Search with only name"
+[ERROR] 13-11-2024 02:08:38 [main] Log - cucumberoptions.SearchPageRunner test is failed.
+[INFO ] 13-11-2024 02:08:38 [main] Log - End testing MTG-AUT
+[INFO ] 13-11-2024 02:09:12 [main] Log - Start testing MTG-AUT
+[INFO ] 13-11-2024 02:09:12 [main] Log - feature test is starting...
+[INFO ] 13-11-2024 02:09:13 [main] Log - Feature: "Search Grave"
+[INFO ] 13-11-2024 02:09:13 [main] Log - Scenario"Search with only name"
+[ERROR] 13-11-2024 02:09:17 [main] Log - cucumberoptions.SearchPageRunner test is failed.
+[INFO ] 13-11-2024 02:09:17 [main] Log - End testing MTG-AUT

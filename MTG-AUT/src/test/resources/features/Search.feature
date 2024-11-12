@@ -6,7 +6,7 @@ Feature: Search Grave
   Background:
     Given user enter the URL "http://localhost:3000/tim-kiem-mo"
 
-  @search
+
   Scenario Outline: Search for a grave with various criteria
     When user enters "<name>" in the name field
     And user enters "<birthYear>" in the birth year field
@@ -21,11 +21,11 @@ Feature: Search Grave
 
   @search
   Scenario: Search with only name
-    When user enters "Nguyễn Văn A" in the name field
+    When user enters "Giót" in the name field
     And user clicks the search button
     Then user should see search results for "Nguyễn Văn A"
 
-  @search
+
   Scenario: Search with name and birth year
     When user enters "Nguyễn Văn A" in the name field
     And user enters "2002" in the birth year field

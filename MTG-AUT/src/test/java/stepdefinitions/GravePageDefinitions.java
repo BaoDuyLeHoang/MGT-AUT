@@ -30,7 +30,7 @@ public class GravePageDefinitions extends BaseTest {
         grave.clickChiTiet();
     }
 
-    @Then("user should see {string} of grave ")
+    @Then("user should see {string} of grave")
     public void userShouldSeeNameOfGraveSelected(String name) {
         Assert.assertTrue(graveDetail.checkNameGrave(name));
     }

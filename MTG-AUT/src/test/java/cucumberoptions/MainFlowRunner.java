@@ -1,7 +1,7 @@
 package cucumberoptions;
 
-import core.Log;
-import core.TestListener;
+import logs.Log;
+import listeners.TestListener;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;

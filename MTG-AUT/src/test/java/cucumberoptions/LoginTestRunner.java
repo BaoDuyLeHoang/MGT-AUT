@@ -1,14 +1,17 @@
 package cucumberoptions;
 
-import core.Log;
-import core.TestListener;
+import com.aventstack.extentreports.Status;
+import extentreports.ExtentTestManager;
+import listeners.ReportListener;
+import logs.Log;
+import listeners.TestListener;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;
 import io.cucumber.testng.TestNGCucumberRunner;
 import org.testng.annotations.*;
 
-@Listeners(TestListener.class)
+@Listeners(ReportListener.class)
 @CucumberOptions(features = "src/test/resources/features", glue = "stepdefinitions", 
 		plugin = { 
 		"pretty",
@@ -30,9 +33,12 @@ public class LoginTestRunner {
 		// Phương thức này chạy các scenarios
 		@Test(description = "Run Cucumber Features", dataProvider = "scenarios")  
 	    public void feature(PickleWrapper pickleWrapper, FeatureWrapper cucumberFeature) throws InterruptedException {
+
+			ExtentTestManager.logMessage(Status.INFO, "Feature: "+cucumberFeature.toString());
+			ExtentTestManager.logMessage(Status.INFO,"Scenario: " +pickleWrapper.toString());
 			// Chạy một kịch bản riêng lẻ bằng cách lấy pickle từ PickleWrapper
 	        testNGCucumberRunner.runScenario(pickleWrapper.getPickle());
-			Log.info(pickleWrapper);
+
 	    }
 		
 		// DataProvider cung cấp các scenarios cho phương thức kiểm thử  

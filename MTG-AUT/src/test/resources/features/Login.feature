@@ -5,4 +5,4 @@ Feature: User Login
 
   @login
   Scenario: Successful login with valid credentials
-    When user login with customer
+    When user login with manager

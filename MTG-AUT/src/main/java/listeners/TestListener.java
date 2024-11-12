@@ -1,4 +1,5 @@
-package core;
+package listeners;
+import logs.Log;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;

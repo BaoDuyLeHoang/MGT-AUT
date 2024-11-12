@@ -22,10 +22,10 @@ public class BaseTest {
 	@AfterMethod
 	public static void afterSuite() {
 		//Đóng driver sau khi test kết thúc
-		/*if (driver != null) {
+		if (driver != null) {
 			driver.close();
 			driver.quit();
-		}*/
+		}
 	}
 
 	public static WebDriver getDriver() {

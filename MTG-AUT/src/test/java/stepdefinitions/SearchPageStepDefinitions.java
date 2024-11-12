@@ -4,9 +4,13 @@ import core.BaseTest;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.logging.log4j.message.Message;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import page.SearchPage;
+
+import java.io.IOException;
+import java.text.MessageFormat;
 
 import static core.BaseTest.getDriver;
 
@@ -55,7 +59,9 @@ public class SearchPageStepDefinitions extends BaseTest {
     }
 
     @Then("user should see search results for {string}")
-    public void userSeeResults(String name) {
-        Assert.assertTrue(searchPage.checkNameSearch(name));
+    public void userSeeResults(String name) throws IOException {
+        if(!searchPage.checkNameSearch(name)){
+            throw new IOException("Invalid Grave Name");
+        }
     }
 }
