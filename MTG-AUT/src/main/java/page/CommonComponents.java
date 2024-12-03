@@ -18,6 +18,15 @@ public class CommonComponents extends BasePage {
 	//ADMIN
 	@FindBy(how = How.CSS, using = "sidebar-menu-item.active")
 	private WebElement dashboardQuanLyTaiKhoan;
+	@FindBy(how = How.XPATH, using = "//a[@href='/admin']")
+	private WebElement thongKe;
+	@FindBy(how = How.XPATH, using = "//a[@href='/danhsachaccount']")
+	private WebElement quanLyNhanSu;
+	@FindBy(how = How.XPATH, using = "//a[@href='/service-management']")
+	private WebElement quanLyDichVu;
+	@FindBy(how = How.XPATH, using = "//a[@href='/material-management']")
+	private WebElement quanLyVatLieu;
+
 
 	//MANAGER
 	@FindBy(how = How.XPATH, using = "//a[@href='/profilestaff']")
@@ -95,6 +104,18 @@ public class CommonComponents extends BasePage {
 	//Admin
 	public void clickDashBoardQuanLyTaiKhoan(){
 		clickElement(dashboardQuanLyTaiKhoan);
+	}
+	public void clickThongKeAdmin(){
+		clickElement(thongKe);
+	}
+	public void clickQuanLyDichVuAdmin(){
+		clickElement(quanLyDichVu);
+	}
+	public void clickQuanLyNhanSuAdmin(){
+		clickElement(quanLyNhanSu);
+	}
+	public void clickQuanLyVatLieuAdmin(){
+		clickElement(quanLyVatLieu);
 	}
 
 	//Trang quản lý

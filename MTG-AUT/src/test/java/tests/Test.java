@@ -11,7 +11,7 @@ import page.*;
 @Listeners(ReportListener.class)
 public class Test extends BaseTest {
 
-    String url = "http://localhost:3000/tim-kiem-mo";
+    String url = "https://sandbox.vnpayment.vn/tryitnow/Home/CreateOrder";
     @org.testng.annotations.Test
     public void TestAuto() throws InterruptedException {
         BaseTest.getDriver().navigate().to(url);
@@ -25,22 +25,15 @@ public class Test extends BaseTest {
         GraveDetail graveDetail = new GraveDetail(getDriver());
         SearchPage searchPage = new SearchPage(getDriver());
         ManagerPage managerPage = new ManagerPage(getDriver());
+        AdminPage adminPage = new AdminPage(getDriver());
 
-        searchPage.sendTextToName("a");
-        searchPage.tapButtonSearch();
-        searchPage.checkNameSearch("a");
+        Payments payments  = new Payments(getDriver());
 
-/*        loginPage.loginWithData("data/LoginWithManager.xlsx");
-        commonComponents.clickDashBoardNhanVien();
-        managerPage.clickStaffButtonByName("Staff1","Vô hiệu hóa");*/
-        //managerPage.clickBlogList(1,"Duyệt");
-        /*commonComponents.clickTimKiemMo();*/
-        /*searchPage.sendTextToName("Giót");
-        searchPage.tapButtonSearch();
-        Thread.sleep(10000);*/
-        /*searchPage.clickSearchResultIndex(0);
-        graveDetail.checkNameGrave("Giót");
-        graveDetail.clickBookService();*/
+        payments.clickTaoDonHang();
+        payments.clickTheNoiDia();
+        payments.clickNCB();
+        payments.paymentWithData("data/PaymentWithData.xlsx");
+
 
 
 

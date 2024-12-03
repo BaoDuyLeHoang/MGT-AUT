@@ -78,7 +78,7 @@ public class LoginPage extends BasePage{
 
     public void loginWithData(String file) {
         String[][] data = ExcelUtils.getTableArray(file, false);
-        if (data != null && data.length > 1) {
+        if (data != null && data.length > 0) {
             for (int i = 0; i < data.length; i++) {
                 String txt = data[i][0];
                 String pwd = data[i][1];
