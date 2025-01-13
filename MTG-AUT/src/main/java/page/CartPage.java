@@ -24,6 +24,7 @@ public class CartPage extends BasePage {
     List<WebElement> itemList;
 
     public void clickSelectAllCheckbox(){
+
         if(!selectAllCheckbox.isSelected()){
             clickElement(selectAllCheckbox);
         }

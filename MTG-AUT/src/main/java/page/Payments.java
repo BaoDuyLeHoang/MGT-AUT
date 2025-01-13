@@ -49,6 +49,24 @@ public class Payments extends BasePage {
     @FindBy(how = How.ID, using = "btnConfirm")
     private WebElement xacNhan;
 
+    @FindBy(how = How.XPATH, using = "//div[@class='amount-input']/input")
+    private WebElement napTien;
+
+    @FindBy(how = How.XPATH, using = "//div[@class ='methods-grid']/div[1]")
+    private WebElement chonVNPay;
+
+    @FindBy(how = How.CLASS_NAME, using = "deposit-button")
+    private WebElement btnNapTien;
+
+    public void inputSoTienNap(String money) {
+        enterText(napTien, money);
+    }
+    public void clickVNPayPayment() {
+        clickElement(chonVNPay);
+    }
+    public void clickBtnNapTien() {
+        clickElement(btnNapTien);
+    }
 
     public void clickTheNoiDia() {
         clickElement(theNoiDia);

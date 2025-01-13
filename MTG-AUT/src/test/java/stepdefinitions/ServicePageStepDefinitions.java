@@ -24,6 +24,7 @@ public class ServicePageStepDefinitions extends BaseTest {
     @And("user selects the service by category at index {int}")
     public void userSelectsTheServiceByCategoryAtIndex(int index) {
         servicePage.getDichVuTheoTheLoai(index);
+
     }
 
     @When("user selects the service by name {string}")

@@ -100,6 +100,15 @@ public class CommonComponents extends BasePage {
 	@FindBy(how = How.XPATH, using = "//a[text()='Giỏ hàng']")
 	private WebElement gioHang;
 
+	@FindBy(how = How.XPATH, using = "//a[text()='Yêu cầu khách hàng']")
+	private WebElement yeuCauKhachHang;
+
+	@FindBy(how = How.XPATH, using = "//a[text()='Ví của tôi']")
+	private WebElement viCuaToi;
+
+	@FindBy(how = How.CLASS_NAME, using = "cart-link")
+	private WebElement cartIcon;
+
 
 	//Admin
 	public void clickDashBoardQuanLyTaiKhoan(){
@@ -178,10 +187,16 @@ public class CommonComponents extends BasePage {
 		clickElement(userIcon);
 	}
 	public void clickGioHang(){
-		clickElement(gioHang);
+		clickElement(cartIcon);
+	}
+	public void clickYeuCauKhachHang(){
+		clickElement(yeuCauKhachHang);
 	}
 	public void clickMoNguoiThan(){
 		clickElement(moNguoiThan);
+	}
+	public void clickViCuaToi(){
+		clickElement(viCuaToi);
 	}
 
 }

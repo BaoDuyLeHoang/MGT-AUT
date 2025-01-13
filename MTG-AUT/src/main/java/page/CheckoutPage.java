@@ -6,7 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class CheckoutPage extends BasePage {
@@ -15,7 +18,7 @@ public class CheckoutPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(how = How.CSS, using = "input[type='radio']")
+    @FindBy(how = How.NAME, using = "paymentMethod")
     private List<WebElement> paymentMethodList;
 
     @FindBy(how = How.CLASS_NAME, using = "form-control")
@@ -37,19 +40,27 @@ public class CheckoutPage extends BasePage {
 
     public void getTextPaymentMethod(String input) {
         if(input.contains("Thanh toán tiền mặt")){
-            input = "cash";
+            input = "balance";
         }
         for (WebElement payment : paymentMethodList) {
             String methodText = payment.getAttribute("value");
             if (methodText.contains(input)) {
-                payment.click();
+                scrollToTopPage();
+                clickElement(payment);
             }
         }
     }
 
     public void sendDateValue(String date) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(dateInput));
         dateInput.clear();
         dateInput.sendKeys(date);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
     }
 
     public void clickCheckoutButton() {

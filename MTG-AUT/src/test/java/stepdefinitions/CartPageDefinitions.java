@@ -17,6 +17,7 @@ public class CartPageDefinitions extends BaseTest {
 
     @When("user clicks the Select All checkbox")
     public void userClicksTheSelectAllCheckbox() {
+        cartPage.scrollToTopPage();
         cartPage.clickSelectAllCheckbox();
     }
 

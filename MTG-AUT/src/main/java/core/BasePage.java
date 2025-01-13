@@ -1,5 +1,6 @@
 package core;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -62,6 +63,15 @@ public class BasePage {
 		this.isElementVisibility(element);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
+		}
+	}
+	public void scrollToTopPage() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(0, 0);");
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {

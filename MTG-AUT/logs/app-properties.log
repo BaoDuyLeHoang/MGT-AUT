@@ -153,3 +153,349 @@
 [INFO ] 03-12-2024 08:01:08 [main] Log - TestAuto test is starting...
 [INFO ] 03-12-2024 08:01:50 [main] Log - TestAuto test is passed.
 [INFO ] 03-12-2024 08:01:50 [main] Log - End testing MTG-AUT
+[INFO ] 11-12-2024 07:14:01 [main] Log - Start automation test
+[INFO ] 11-12-2024 07:14:01 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 07:14:23 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 07:14:35 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 07:14:35 [main] Log - Finish automation test
+[INFO ] 11-12-2024 07:16:07 [main] Log - Start automation test
+[INFO ] 11-12-2024 07:16:07 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 07:16:35 [main] Log - SUCCESS: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 07:16:35 [main] Log - Finish automation test
+[INFO ] 11-12-2024 07:19:20 [main] Log - Start automation test
+[INFO ] 11-12-2024 07:19:20 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 07:19:30 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 07:19:30 [main] Log - Finish automation test
+[INFO ] 11-12-2024 07:23:30 [main] Log - Start automation test
+[INFO ] 11-12-2024 07:23:30 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 07:23:40 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 07:23:40 [main] Log - Finish automation test
+[INFO ] 11-12-2024 07:32:53 [main] Log - Start automation test
+[INFO ] 11-12-2024 07:32:53 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 07:33:03 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 07:33:03 [main] Log - Finish automation test
+[INFO ] 11-12-2024 07:37:24 [main] Log - Start automation test
+[INFO ] 11-12-2024 07:37:24 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 07:37:34 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 07:37:35 [main] Log - Finish automation test
+[INFO ] 11-12-2024 07:38:53 [main] Log - Start testing MTG-AUT
+[INFO ] 11-12-2024 07:38:54 [main] Log - TestAuto test is starting...
+[INFO ] 11-12-2024 07:38:58 [main] Log - TestAuto test is passed.
+[INFO ] 11-12-2024 07:38:59 [main] Log - End testing MTG-AUT
+[INFO ] 11-12-2024 07:39:59 [main] Log - Start testing MTG-AUT
+[INFO ] 11-12-2024 07:40:00 [main] Log - TestAuto test is starting...
+[INFO ] 11-12-2024 07:40:03 [main] Log - TestAuto test is passed.
+[INFO ] 11-12-2024 07:40:03 [main] Log - End testing MTG-AUT
+[INFO ] 11-12-2024 07:40:13 [main] Log - Start automation test
+[INFO ] 11-12-2024 07:40:13 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 07:40:23 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 07:40:23 [main] Log - Finish automation test
+[INFO ] 11-12-2024 07:41:06 [main] Log - Start automation test
+[INFO ] 11-12-2024 07:41:07 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 07:41:18 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 07:41:18 [main] Log - Finish automation test
+[INFO ] 11-12-2024 07:59:16 [main] Log - Start testing MTG-AUT
+[INFO ] 11-12-2024 07:59:18 [main] Log - TestAuto test is starting...
+[INFO ] 11-12-2024 07:59:21 [main] Log - TestAuto test is passed.
+[INFO ] 11-12-2024 07:59:21 [main] Log - End testing MTG-AUT
+[INFO ] 11-12-2024 08:02:07 [main] Log - Start testing MTG-AUT
+[INFO ] 11-12-2024 08:02:17 [main] Log - Start automation test
+[INFO ] 11-12-2024 08:02:17 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 08:02:31 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 08:02:31 [main] Log - Finish automation test
+[INFO ] 11-12-2024 09:30:43 [main] Log - Start automation test
+[INFO ] 11-12-2024 09:30:43 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 09:32:16 [main] Log - Start automation test
+[INFO ] 11-12-2024 09:32:16 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 09:32:33 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 09:32:33 [main] Log - Finish automation test
+[INFO ] 11-12-2024 09:33:34 [main] Log - Start automation test
+[INFO ] 11-12-2024 09:33:34 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 09:33:51 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 09:33:51 [main] Log - Finish automation test
+[INFO ] 11-12-2024 09:39:24 [main] Log - Start automation test
+[INFO ] 11-12-2024 09:39:24 [main] Log - class cucumberoptions.MainFlowRunner
+[WARN ] 11-12-2024 09:39:25 [main] Log - PASSED: feature
+[INFO ] 11-12-2024 09:39:25 [main] Log - Finish automation test
+[INFO ] 11-12-2024 09:39:43 [main] Log - Start automation test
+[INFO ] 11-12-2024 09:39:43 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 09:40:00 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 09:40:00 [main] Log - Finish automation test
+[INFO ] 11-12-2024 09:43:04 [main] Log - Start automation test
+[INFO ] 11-12-2024 09:43:04 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 09:43:21 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 09:43:21 [main] Log - Finish automation test
+[INFO ] 11-12-2024 09:44:58 [main] Log - Start automation test
+[INFO ] 11-12-2024 09:44:58 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 09:45:15 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 09:45:15 [main] Log - Finish automation test
+[INFO ] 11-12-2024 09:47:16 [main] Log - Start automation test
+[INFO ] 11-12-2024 09:47:16 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 09:47:32 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 09:47:32 [main] Log - Finish automation test
+[INFO ] 11-12-2024 09:50:20 [main] Log - Start automation test
+[INFO ] 11-12-2024 09:50:20 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 09:50:41 [main] Log - Start automation test
+[INFO ] 11-12-2024 09:50:41 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 09:51:23 [main] Log - Start automation test
+[INFO ] 11-12-2024 09:51:23 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 09:52:53 [main] Log - Start automation test
+[INFO ] 11-12-2024 09:52:53 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 09:54:28 [main] Log - SUCCESS: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 09:54:28 [main] Log - Finish automation test
+[INFO ] 11-12-2024 09:57:03 [main] Log - Start automation test
+[INFO ] 11-12-2024 09:57:03 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 11-12-2024 09:57:23 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 09:57:23 [main] Log - Finish automation test
+[INFO ] 11-12-2024 09:59:51 [main] Log - Start automation test
+[INFO ] 11-12-2024 09:59:51 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 10:00:20 [main] Log - SUCCESS: cucumberoptions.MainFlowRunner
+[INFO ] 11-12-2024 10:00:20 [main] Log - Finish automation test
+[INFO ] 16-12-2024 14:02:52 [main] Log - Start automation test
+[INFO ] 16-12-2024 14:02:52 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 16-12-2024 14:04:04 [main] Log - SUCCESS: cucumberoptions.MainFlowRunner
+[INFO ] 16-12-2024 14:04:04 [main] Log - Finish automation test
+[INFO ] 30-12-2024 21:35:38 [main] Log - Start automation test
+[INFO ] 30-12-2024 21:35:38 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 30-12-2024 21:35:52 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 21:35:52 [main] Log - Finish automation test
+[INFO ] 30-12-2024 21:37:58 [main] Log - Start automation test
+[INFO ] 30-12-2024 21:37:58 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 30-12-2024 21:38:12 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 21:38:12 [main] Log - Finish automation test
+[INFO ] 30-12-2024 21:41:41 [main] Log - Start automation test
+[INFO ] 30-12-2024 21:41:41 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 30-12-2024 21:41:58 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 21:41:58 [main] Log - Finish automation test
+[INFO ] 30-12-2024 21:47:36 [main] Log - Start automation test
+[INFO ] 30-12-2024 21:47:36 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 21:49:25 [main] Log - Start automation test
+[INFO ] 30-12-2024 21:49:25 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 21:50:29 [main] Log - Start automation test
+[INFO ] 30-12-2024 21:50:29 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 30-12-2024 21:51:15 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 21:51:15 [main] Log - Finish automation test
+[INFO ] 30-12-2024 21:52:44 [main] Log - Start automation test
+[INFO ] 30-12-2024 21:52:44 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 30-12-2024 21:53:01 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 21:53:01 [main] Log - Finish automation test
+[INFO ] 30-12-2024 21:54:38 [main] Log - Start automation test
+[INFO ] 30-12-2024 21:54:38 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 30-12-2024 21:54:53 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 21:54:53 [main] Log - Finish automation test
+[INFO ] 30-12-2024 21:55:56 [main] Log - Start automation test
+[INFO ] 30-12-2024 21:55:56 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 30-12-2024 21:56:26 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 21:56:26 [main] Log - Finish automation test
+[INFO ] 30-12-2024 21:57:53 [main] Log - Start automation test
+[INFO ] 30-12-2024 21:57:53 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 22:00:41 [main] Log - Start automation test
+[INFO ] 30-12-2024 22:00:41 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 22:03:16 [main] Log - Start automation test
+[INFO ] 30-12-2024 22:03:16 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 22:05:23 [main] Log - Start automation test
+[INFO ] 30-12-2024 22:05:23 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 30-12-2024 22:05:40 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 22:05:40 [main] Log - Finish automation test
+[INFO ] 30-12-2024 22:06:00 [main] Log - Start automation test
+[INFO ] 30-12-2024 22:06:00 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 30-12-2024 22:06:45 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 22:06:45 [main] Log - Finish automation test
+[INFO ] 30-12-2024 22:07:59 [main] Log - Start automation test
+[INFO ] 30-12-2024 22:07:59 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 22:08:51 [main] Log - Start automation test
+[INFO ] 30-12-2024 22:08:51 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 22:09:44 [main] Log - Start automation test
+[INFO ] 30-12-2024 22:09:44 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 22:11:16 [main] Log - Start automation test
+[INFO ] 30-12-2024 22:11:17 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 22:13:42 [main] Log - Start automation test
+[INFO ] 30-12-2024 22:13:42 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 22:15:09 [main] Log - Start automation test
+[INFO ] 30-12-2024 22:15:09 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 22:15:39 [main] Log - SUCCESS: cucumberoptions.MainFlowRunner
+[INFO ] 30-12-2024 22:15:39 [main] Log - Finish automation test
+[INFO ] 07-01-2025 10:41:49 [main] Log - Start automation test
+[INFO ] 07-01-2025 10:41:49 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 07-01-2025 10:42:07 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 10:42:08 [main] Log - Finish automation test
+[INFO ] 07-01-2025 10:43:16 [main] Log - Start automation test
+[INFO ] 07-01-2025 10:43:16 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 07-01-2025 10:43:33 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 10:43:33 [main] Log - Finish automation test
+[INFO ] 07-01-2025 10:46:01 [main] Log - Start automation test
+[INFO ] 07-01-2025 10:46:01 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 10:46:50 [main] Log - Start automation test
+[INFO ] 07-01-2025 10:46:50 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 07-01-2025 10:48:20 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 10:48:20 [main] Log - Finish automation test
+[INFO ] 07-01-2025 10:57:35 [main] Log - Start automation test
+[INFO ] 07-01-2025 10:57:35 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 07-01-2025 10:59:15 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 10:59:15 [main] Log - Finish automation test
+[INFO ] 07-01-2025 11:06:57 [main] Log - Start automation test
+[INFO ] 07-01-2025 11:06:57 [main] Log - class cucumberoptions.MainFlowRunner
+[ERROR] 07-01-2025 11:07:04 [main] Log - FAIL: cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 11:07:04 [main] Log - Finish automation test
+[INFO ] 07-01-2025 11:08:49 [main] Log - Start automation test
+[INFO ] 07-01-2025 11:08:49 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 11:10:51 [main] Log - Start automation test
+[INFO ] 07-01-2025 11:10:51 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 11:12:35 [main] Log - SUCCESS: cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 11:12:35 [main] Log - Finish automation test
+[INFO ] 07-01-2025 11:14:09 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 11:14:10 [main] Log - TestAuto test is starting...
+[INFO ] 07-01-2025 11:22:53 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 11:22:55 [main] Log - TestAuto test is starting...
+[INFO ] 07-01-2025 11:24:48 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 11:24:49 [main] Log - TestAuto test is starting...
+[INFO ] 07-01-2025 11:24:52 [main] Log - TestAuto test is passed.
+[INFO ] 07-01-2025 11:24:52 [main] Log - End testing MTG-AUT
+[ERROR] 07-01-2025 11:25:00 [main] Log - tests.Test test is failed.
+[INFO ] 07-01-2025 11:25:01 [main] Log - End testing MTG-AUT
+[INFO ] 07-01-2025 11:26:31 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 11:26:31 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 11:26:32 [main] Log - feature test is starting...
+[ERROR] 07-01-2025 11:26:50 [main] Log - cucumberoptions.MainFlowRunner test is failed.
+[INFO ] 07-01-2025 11:26:50 [main] Log - End testing MTG-AUT
+[INFO ] 07-01-2025 11:28:51 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 11:28:51 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 11:28:52 [main] Log - feature test is starting...
+[INFO ] 07-01-2025 11:31:25 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 11:31:25 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 11:31:26 [main] Log - feature test is starting...
+[INFO ] 07-01-2025 11:35:28 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 11:35:28 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 11:35:28 [main] Log - feature test is starting...
+[INFO ] 07-01-2025 11:36:29 [main] Log - feature test is passed.
+[INFO ] 07-01-2025 11:36:29 [main] Log - End testing MTG-AUT
+[INFO ] 07-01-2025 13:24:00 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 13:24:02 [main] Log - TestAuto test is starting...
+[INFO ] 07-01-2025 13:26:59 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 13:27:00 [main] Log - TestAuto test is starting...
+[INFO ] 07-01-2025 13:28:37 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 13:28:38 [main] Log - TestAuto test is starting...
+[INFO ] 07-01-2025 13:34:29 [main] Log - TestAuto test is passed.
+[INFO ] 07-01-2025 13:39:29 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 13:39:30 [main] Log - TestAuto test is starting...
+[INFO ] 07-01-2025 14:03:17 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 14:03:17 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 14:03:17 [main] Log - feature test is starting...
+[ERROR] 07-01-2025 14:03:29 [main] Log - cucumberoptions.MainFlowRunner test is failed.
+[INFO ] 07-01-2025 14:03:29 [main] Log - feature test is starting...
+[ERROR] 07-01-2025 14:03:39 [main] Log - cucumberoptions.MainFlowRunner test is failed.
+[INFO ] 07-01-2025 14:03:39 [main] Log - End testing MTG-AUT
+[INFO ] 07-01-2025 20:09:32 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 20:09:32 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 20:09:33 [main] Log - feature test is starting...
+[ERROR] 07-01-2025 20:09:50 [main] Log - cucumberoptions.MainFlowRunner test is failed.
+[INFO ] 07-01-2025 20:09:50 [main] Log - feature test is starting...
+[ERROR] 07-01-2025 20:10:02 [main] Log - cucumberoptions.MainFlowRunner test is failed.
+[INFO ] 07-01-2025 20:10:02 [main] Log - End testing MTG-AUT
+[INFO ] 07-01-2025 20:12:31 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 20:12:31 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 20:12:32 [main] Log - feature test is starting...
+[INFO ] 07-01-2025 20:15:48 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 20:15:48 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 20:15:49 [main] Log - feature test is starting...
+[INFO ] 07-01-2025 20:16:21 [main] Log - feature test is passed.
+[INFO ] 07-01-2025 20:16:21 [main] Log - feature test is starting...
+[ERROR] 07-01-2025 20:16:33 [main] Log - cucumberoptions.MainFlowRunner test is failed.
+[INFO ] 07-01-2025 20:16:33 [main] Log - End testing MTG-AUT
+[INFO ] 07-01-2025 20:52:08 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 20:52:08 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 20:52:08 [main] Log - feature test is starting...
+[ERROR] 07-01-2025 20:52:26 [main] Log - cucumberoptions.MainFlowRunner test is failed.
+[INFO ] 07-01-2025 20:52:27 [main] Log - End testing MTG-AUT
+[INFO ] 07-01-2025 20:52:59 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 20:52:59 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 20:53:00 [main] Log - feature test is starting...
+[ERROR] 07-01-2025 20:53:36 [main] Log - cucumberoptions.MainFlowRunner test is failed.
+[INFO ] 07-01-2025 20:53:37 [main] Log - End testing MTG-AUT
+[INFO ] 07-01-2025 20:58:01 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 20:58:01 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 20:58:01 [main] Log - feature test is starting...
+[INFO ] 07-01-2025 20:58:52 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 20:58:52 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 20:58:52 [main] Log - feature test is starting...
+[INFO ] 07-01-2025 20:59:19 [main] Log - feature test is passed.
+[INFO ] 07-01-2025 20:59:19 [main] Log - End testing MTG-AUT
+[INFO ] 07-01-2025 21:15:45 [main] Log - Start testing MTG-AUT
+[INFO ] 07-01-2025 21:15:45 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 07-01-2025 21:15:45 [main] Log - feature test is starting...
+[INFO ] 07-01-2025 21:16:18 [main] Log - feature test is passed.
+[INFO ] 07-01-2025 21:16:18 [main] Log - feature test is starting...
+[ERROR] 07-01-2025 21:16:27 [main] Log - cucumberoptions.MainFlowRunner test is failed.
+[INFO ] 07-01-2025 21:16:27 [main] Log - feature test is starting...
+[ERROR] 07-01-2025 21:18:52 [main] Log - cucumberoptions.MainFlowRunner test is failed.
+[INFO ] 07-01-2025 21:18:52 [main] Log - feature test is starting...
+[ERROR] 07-01-2025 21:21:08 [main] Log - cucumberoptions.MainFlowRunner test is failed.
+[INFO ] 07-01-2025 21:21:08 [main] Log - End testing MTG-AUT
+[INFO ] 09-01-2025 10:03:16 [main] Log - Start testing MTG-AUT
+[INFO ] 09-01-2025 10:03:16 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 09-01-2025 10:03:17 [main] Log - feature test is starting...
+[INFO ] 09-01-2025 10:03:38 [main] Log - feature test is passed.
+[INFO ] 09-01-2025 10:03:38 [main] Log - End testing MTG-AUT
+[INFO ] 09-01-2025 10:05:01 [main] Log - Start testing MTG-AUT
+[INFO ] 09-01-2025 10:05:01 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 09-01-2025 10:05:02 [main] Log - feature test is starting...
+[INFO ] 09-01-2025 10:05:26 [main] Log - feature test is passed.
+[INFO ] 09-01-2025 10:05:26 [main] Log - End testing MTG-AUT
+[INFO ] 09-01-2025 10:09:57 [main] Log - Start testing MTG-AUT
+[INFO ] 09-01-2025 10:09:57 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 09-01-2025 10:09:57 [main] Log - feature test is starting...
+[INFO ] 09-01-2025 10:16:31 [main] Log - Start testing MTG-AUT
+[INFO ] 09-01-2025 10:16:31 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 09-01-2025 10:16:31 [main] Log - feature test is starting...
+[INFO ] 09-01-2025 10:16:58 [main] Log - feature test is passed.
+[INFO ] 09-01-2025 10:16:58 [main] Log - End testing MTG-AUT
+[INFO ] 09-01-2025 10:20:04 [main] Log - Start testing MTG-AUT
+[INFO ] 09-01-2025 10:20:04 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 09-01-2025 10:20:05 [main] Log - feature test is starting...
+[INFO ] 09-01-2025 10:20:38 [main] Log - Start testing MTG-AUT
+[INFO ] 09-01-2025 10:20:38 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 09-01-2025 10:20:39 [main] Log - feature test is starting...
+[ERROR] 09-01-2025 10:22:52 [main] Log - cucumberoptions.MainFlowRunner test is failed.
+[INFO ] 09-01-2025 10:22:52 [main] Log - End testing MTG-AUT
+[INFO ] 09-01-2025 10:23:40 [main] Log - Start testing MTG-AUT
+[INFO ] 09-01-2025 10:23:40 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 09-01-2025 10:23:41 [main] Log - feature test is starting...
+[INFO ] 09-01-2025 10:24:38 [main] Log - Start testing MTG-AUT
+[INFO ] 09-01-2025 10:24:38 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 09-01-2025 10:24:39 [main] Log - feature test is starting...
+[ERROR] 09-01-2025 10:25:30 [main] Log - cucumberoptions.MainFlowRunner test is failed.
+[INFO ] 09-01-2025 10:25:30 [main] Log - End testing MTG-AUT
+[INFO ] 09-01-2025 10:34:07 [main] Log - Start testing MTG-AUT
+[INFO ] 09-01-2025 10:34:07 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 09-01-2025 10:34:07 [main] Log - feature test is starting...
+[INFO ] 09-01-2025 10:36:46 [main] Log - Start testing MTG-AUT
+[INFO ] 09-01-2025 10:36:46 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 09-01-2025 10:36:47 [main] Log - feature test is starting...
+[INFO ] 09-01-2025 10:37:26 [main] Log - feature test is passed.
+[INFO ] 09-01-2025 10:37:26 [main] Log - End testing MTG-AUT
+[INFO ] 09-01-2025 11:31:09 [main] Log - Start testing MTG-AUT
+[INFO ] 09-01-2025 11:31:09 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 09-01-2025 11:31:10 [main] Log - feature test is starting...
+[INFO ] 09-01-2025 11:31:28 [main] Log - feature test is passed.
+[INFO ] 09-01-2025 11:31:28 [main] Log - End testing MTG-AUT
+[INFO ] 09-01-2025 11:36:47 [main] Log - Start testing MTG-AUT
+[INFO ] 09-01-2025 11:36:47 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 09-01-2025 11:36:48 [main] Log - feature test is starting...
+[INFO ] 09-01-2025 11:37:06 [main] Log - feature test is passed.
+[INFO ] 09-01-2025 11:37:06 [main] Log - End testing MTG-AUT
+[INFO ] 09-01-2025 14:39:34 [main] Log - Start testing MTG-AUT
+[INFO ] 09-01-2025 14:39:36 [main] Log - TestAuto test is starting...
+[ERROR] 09-01-2025 14:39:41 [main] Log - tests.Test test is failed.
+[INFO ] 09-01-2025 14:39:42 [main] Log - End testing MTG-AUT
+[INFO ] 09-01-2025 14:40:05 [main] Log - Start testing MTG-AUT
+[INFO ] 09-01-2025 14:40:07 [main] Log - TestAuto test is starting...
+[INFO ] 09-01-2025 14:41:05 [main] Log - TestAuto test is passed.
+[INFO ] 09-01-2025 15:02:09 [main] Log - Start testing MTG-AUT
+[INFO ] 09-01-2025 15:02:09 [main] Log - class cucumberoptions.MainFlowRunner
+[INFO ] 09-01-2025 15:02:10 [main] Log - feature test is starting...
+[INFO ] 09-01-2025 15:02:26 [main] Log - feature test is passed.
+[INFO ] 09-01-2025 15:02:26 [main] Log - End testing MTG-AUT
+[INFO ] 10-01-2025 10:53:38 [main] Log - Start testing MTG-AUT
+[INFO ] 10-01-2025 10:53:40 [main] Log - TestAuto test is starting...
+[INFO ] 10-01-2025 10:54:11 [main] Log - TestAuto test is passed.
+[INFO ] 10-01-2025 10:54:12 [main] Log - End testing MTG-AUT

@@ -1,5 +1,6 @@
 package cucumberoptions;
 
+import listeners.ReportListener;
 import logs.Log;
 import listeners.TestListener;
 import io.cucumber.testng.CucumberOptions;
@@ -8,14 +9,14 @@ import io.cucumber.testng.PickleWrapper;
 import io.cucumber.testng.TestNGCucumberRunner;
 import org.testng.annotations.*;
 
-@Listeners(TestListener.class)
+@Listeners(ReportListener.class)
 @CucumberOptions(features = "src/test/resources/features", glue = "stepdefinitions", 
 		plugin = { 
 		"pretty",
 		"html:target/cucumber-reports/cucumber-pretty.html", 
 		"json:target/cucumber-reports/CucumberTestReport.json",
 		"rerun:target/cucumber-reports/rerun.txt" },
-		tags = "@mainflow")
+		tags = "@customerBookingFlow")
 
 public class MainFlowRunner {
 		private TestNGCucumberRunner testNGCucumberRunner;

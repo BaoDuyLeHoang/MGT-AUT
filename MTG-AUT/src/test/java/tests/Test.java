@@ -11,7 +11,7 @@ import page.*;
 @Listeners(ReportListener.class)
 public class Test extends BaseTest {
 
-    String url = "https://sandbox.vnpayment.vn/tryitnow/Home/CreateOrder";
+    String url = "https://mtg-two.vercel.app/login";
     @org.testng.annotations.Test
     public void TestAuto() throws InterruptedException {
         BaseTest.getDriver().navigate().to(url);
@@ -28,18 +28,11 @@ public class Test extends BaseTest {
         AdminPage adminPage = new AdminPage(getDriver());
 
         Payments payments  = new Payments(getDriver());
+        loginPage.loginWithData("data/LoginWithManager.xlsx");
+        managerPage.clickBtnTuNgay();
+        managerPage.clickRequestList(1);
+        managerPage.clickBtnXacNhan();
 
-        payments.clickTaoDonHang();
-        payments.clickTheNoiDia();
-        payments.clickNCB();
-        payments.paymentWithData("data/PaymentWithData.xlsx");
-
-
-
-
-        /*checkoutPage.getTextPaymentMethod("Thanh toán tiền mặt");
-        checkoutPage.sendDateValue("12-30-2024"); //  (mm/dd/yyyy)
-        checkoutPage.clickCheckoutButton();*/
     }
     @AfterMethod
     public void takeSreenShot(ITestResult result) throws InterruptedException {

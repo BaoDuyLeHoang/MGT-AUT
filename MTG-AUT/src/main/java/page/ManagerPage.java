@@ -21,8 +21,28 @@ public class ManagerPage extends BasePage {
     @FindBy(how = How.XPATH, using = "//input[@placeholder='Từ ngày']")
     private WebElement startDateFeedback;
 
+    @FindBy(how = How.XPATH, using = "//a[@href='/request-manager']")
+    private WebElement btnTuNgay;
+    public void clickBtnTuNgay(){
+        clickElement(btnTuNgay);
+    }
+
+
     @FindBy(how = How.XPATH, using = "//input[@placeholder='Đến ngày']")
     private WebElement endDateFeedback;
+
+    @FindBy(how = How.XPATH, using = "//button[text()='Từ chối']")
+    private WebElement btnTuChoi;
+    public void clickBtnTuChoi(){
+        clickElement(btnTuChoi);
+    }
+
+    @FindBy(how = How.XPATH, using = "//button[text()='Xác nhận']")
+    private WebElement btnXacNhan;
+    public void clickBtnXacNhan(){
+        isElementVisibility(btnXacNhan);
+        clickElement(btnXacNhan);
+    }
 
     @FindBy(how = How.CLASS_NAME, using = "detail-button")
     private WebElement detailFeedbackBtn;
@@ -69,6 +89,25 @@ public class ManagerPage extends BasePage {
 
         } catch (NoSuchElementException e) {
             System.out.println("No button with title '" + action + "' found for staff member '" + staffName + "'.");
+        }
+    }
+
+    @FindBy(how = How.XPATH, using = "//div[@class='rm-table-container']")
+    WebElement requestList;
+
+    public void clickRequestList(int index) {
+        try {
+            List<WebElement> buttons = requestList.findElements(By.xpath(".//tr[" + index + "]//a"));
+
+            for (WebElement button : buttons) {
+                this.isElementVisibility(button);
+                button.click();
+                return;
+            }
+        } catch (NoSuchElementException e) {
+            System.out.println("No element found at the specified index.");
+        } catch (IndexOutOfBoundsException e) {
+            throw new IndexOutOfBoundsException("Index out of bounds for blogList");
         }
     }
 

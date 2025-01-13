@@ -53,17 +53,29 @@ public class CommonComponentsStepDefinitions extends BaseTest {
         commonComponents.clickUserIcon(); 
     }
 
-    @And("user clicks on Cart")
+    @When("user clicks on Specail Request")
+    public void userClicksOnSpecialRequest() {
+        commonComponents.clickYeuCauKhachHang();
+    }
+
+    @When("user clicks on Cart")
     public void userClicksOnCart() throws InterruptedException{
-        commonComponents.clickUserIcon();
+        Thread.sleep(1000);
         commonComponents.clickGioHang();
         Thread.sleep(500);
     }
+
 
     @And("user clicks Relative Grave")
     public void userClicksOnRelativeGrave() {
         commonComponents.clickUserIcon();
         commonComponents.clickMoNguoiThan();
+    }
+
+    @And("user clicks wallet")
+    public void userClicksOnWallet() {
+        commonComponents.clickUserIcon();
+        commonComponents.clickViCuaToi();
     }
 
     @Then("user should see the profile section")

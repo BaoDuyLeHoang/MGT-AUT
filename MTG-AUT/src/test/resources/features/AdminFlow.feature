@@ -1,18 +1,16 @@
 Feature: Main Flow of the Application
 
   Background:
-    Given user enter the URL "http://localhost:3000/login"
+    Given user enter the URL  "https://mtg-two.vercel.app/login"
 
   @mainflow
   Scenario Outline: User booking service
-    When user login with customer
-    And user clicks on Cart
-    And user clicks the Select All checkbox
-    Then user clicks the Payment button
-
-    When user selects "<payment>" Payment button
-    And user enters the date "<date>"
-    Then user clicks the Checkout button
+    When user login with admin
+    And  admin check dashboard
+    And  admin check livestream
+    And admin check manager list
+    And admin check service list
+    Then admin check material list
 
     Examples:
       |name |payment|date      |
