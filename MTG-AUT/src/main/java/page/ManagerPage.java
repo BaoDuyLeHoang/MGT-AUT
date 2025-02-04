@@ -21,6 +21,19 @@ public class ManagerPage extends BasePage {
     @FindBy(how = How.XPATH, using = "//input[@placeholder='Từ ngày']")
     private WebElement startDateFeedback;
 
+    @FindBy(how = How.XPATH, using = "//div[@class='notification-list']//div")
+    private WebElement thongBaoList;
+
+    @FindBy(how = How.CLASS_NAME, using = "material-dialog-content")
+    private WebElement danhSachChonVatLieu;
+
+    @FindBy(how = How.XPATH, using = "//div[@class='rdm-materials-container']//button")
+    private WebElement btnChonVatLieu;
+    public void clickBtnChonVatLieu() throws InterruptedException {
+        scrollToBottomPage();
+        Thread.sleep(15000);
+    }
+
     @FindBy(how = How.XPATH, using = "//a[@href='/request-manager']")
     private WebElement btnTuNgay;
     public void clickBtnTuNgay(){
@@ -40,8 +53,9 @@ public class ManagerPage extends BasePage {
     @FindBy(how = How.XPATH, using = "//button[text()='Xác nhận']")
     private WebElement btnXacNhan;
     public void clickBtnXacNhan(){
-        isElementVisibility(btnXacNhan);
-        clickElement(btnXacNhan);
+        if(isElementVisibility(btnXacNhan)){
+            clickElement(btnXacNhan);
+        }
     }
 
     @FindBy(how = How.CLASS_NAME, using = "detail-button")
@@ -110,6 +124,51 @@ public class ManagerPage extends BasePage {
             throw new IndexOutOfBoundsException("Index out of bounds for blogList");
         }
     }
+
+    public void clickChonVatLieu(String index) {
+        try {
+            List<WebElement> buttons = requestList.findElements(By.xpath(".//tr[" + index + "]//a"));
+
+            for (WebElement button : buttons) {
+                this.isElementVisibility(button);
+                button.click();
+                return;
+            }
+        } catch (NoSuchElementException e) {
+            System.out.println("No element found at the specified index.");
+        } catch (IndexOutOfBoundsException e) {
+            throw new IndexOutOfBoundsException("Index out of bounds for blogList");
+        }
+    }
+
+    // Function to select materials by a single string containing names separated by commas
+    public void selectMaterialsByNames(String materialNames) {
+        // Split the input string into an array based on commas
+        String[] materialsArray = materialNames.split(",");
+
+        // Loop through each material name
+        for (String materialName : materialsArray) {
+            materialName = materialName.trim();  // Trim spaces around names
+
+            try {
+                // Construct the XPath dynamically based on the material name
+                WebElement material = driver.findElement(By.xpath("//div[@class='material-item']//h4[text()='" + materialName + "']/ancestor::div[@class='material-item']//div[@class='material-select']"));
+
+                // Check if the material is not already selected (e.g., check for 'selected' class)
+                if (!material.findElement(By.xpath("./ancestor::div[@class='material-item']")).getAttribute("class").contains("selected")) {
+                    material.click();
+                    System.out.println("Selected material: " + materialName);
+                } else {
+                    System.out.println("Material '" + materialName + "' is already selected.");
+                }
+            } catch (NoSuchElementException e) {
+                System.out.println("Material with name '" + materialName + "' not found.");
+            }
+        }
+    }
+
+
+
 
 
 

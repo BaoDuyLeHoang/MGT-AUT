@@ -1,10 +1,10 @@
 Feature: Main Flow of the Application
 
   Background:
-    Given user enter the URL  "https://mtg-two.vercel.app/login"
+    Given user enter the URL "https://mtg-two.vercel.app/login"
 
-  @mainflow
-  Scenario Outline: User booking service
+  @admin
+  Scenario: Admin checking
     When user login with admin
     And  admin check dashboard
     And  admin check livestream
@@ -12,7 +12,4 @@ Feature: Main Flow of the Application
     And admin check service list
     Then admin check material list
 
-    Examples:
-      |name |payment|date      |
-      |Giót |VNPay  |12-30-2024|
 

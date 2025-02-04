@@ -70,14 +70,27 @@ public class BasePage {
 		}
 	}
 	public void scrollToTopPage() {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollTo(0, 0);");
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(2000);
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("window.scrollTo(0, 0);");
+			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
 		}
 	}
+	public void scrollToBottomPage() {
+		try {
+			Thread.sleep(2000);
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
+		}
+	}
+
+
 
 	public String getText(WebElement element) {
 		wait.until(ExpectedConditions.visibilityOf(element));

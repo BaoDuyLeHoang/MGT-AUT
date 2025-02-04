@@ -46,6 +46,10 @@ public class GravePageDefinitions extends BaseTest {
     public void userSelectTypeRequest(String type) {
         relativeGrave.clickLoaiYeuCau(type);
     }
+    @And("user selects service of request {string}")
+    public void userSelectServiceRequest(String service) {
+        relativeGrave.clickDichVu(service);
+    }
     @And("user selects date complete {string}")
     public void userSelectDateComplete(String date) {
         relativeGrave.clickNgayHoanThanh(date);

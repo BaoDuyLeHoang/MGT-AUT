@@ -25,8 +25,12 @@ public class ManagerPageStepDefinitions extends BaseTest {
         managerPage.clickRequestList(1);
     }
     @When("manager clicks confirm button")
-    public void userSelectsTheGraveOptionByValue() {
+    public void managerClicksConfirmRequest() {
         managerPage.clickBtnXacNhan();
+    }
+    @When("manager choice material")
+    public void managerChoiceMaterial() throws InterruptedException {
+        managerPage.clickBtnChonVatLieu();
     }
 
 } 

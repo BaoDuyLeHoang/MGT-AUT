@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
@@ -38,6 +39,12 @@ public class ServiceDetailPageDefinitions extends BaseTest {
     @Then("user see notification successfull")
     public void userSeeNotificationSuccessfull() {
         serviceDetailPage.isThongBaoDisplayed();
+    }
+    @And("user clicks confirm service button")
+    public void userClicksConfirmServiceButto() throws InterruptedException {
+        Thread.sleep(1000);
+        serviceDetailPage.clickBtnXacNhanDichVuCustomer();
+        Thread.sleep(3000);
     }
 
 } 

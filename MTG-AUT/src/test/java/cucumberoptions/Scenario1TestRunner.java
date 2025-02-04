@@ -2,7 +2,6 @@ package cucumberoptions;
 
 import listeners.ReportListener;
 import logs.Log;
-import listeners.TestListener;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;
@@ -16,9 +15,9 @@ import org.testng.annotations.*;
 		"html:target/cucumber-reports/cucumber-pretty.html", 
 		"json:target/cucumber-reports/CucumberTestReport.json",
 		"rerun:target/cucumber-reports/rerun.txt" },
-		tags = "@customerBookingFlow")
+		tags = "@scenario1")
 
-public class MainFlowRunner {
+public class Scenario1TestRunner {
 		private TestNGCucumberRunner testNGCucumberRunner;
 		
 		@BeforeClass(alwaysRun=true) 

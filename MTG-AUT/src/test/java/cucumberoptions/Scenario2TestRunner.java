@@ -1,14 +1,11 @@
 package cucumberoptions;
 
-import com.aventstack.extentreports.Status;
-import extentreports.ExtentTestManager;
-import listeners.ReportListener;
-import logs.Log;
-import listeners.TestListener;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;
 import io.cucumber.testng.TestNGCucumberRunner;
+import listeners.ReportListener;
+import logs.Log;
 import org.testng.annotations.*;
 
 @Listeners(ReportListener.class)
@@ -18,9 +15,9 @@ import org.testng.annotations.*;
 		"html:target/cucumber-reports/cucumber-pretty.html", 
 		"json:target/cucumber-reports/CucumberTestReport.json",
 		"rerun:target/cucumber-reports/rerun.txt" },
-		tags = "@login")
+		tags = "@scenario2")
 
-public class LoginTestRunner {
+public class Scenario2TestRunner {
 		private TestNGCucumberRunner testNGCucumberRunner;
 		
 		@BeforeClass(alwaysRun=true) 
@@ -32,20 +29,16 @@ public class LoginTestRunner {
 		
 		// Phương thức này chạy các scenarios
 		@Test(description = "Run Cucumber Features", dataProvider = "scenarios")  
-	    public void feature(PickleWrapper pickleWrapper, FeatureWrapper cucumberFeature) throws InterruptedException {
-
-			ExtentTestManager.logMessage(Status.INFO, "Feature: "+cucumberFeature.toString());
-			ExtentTestManager.logMessage(Status.INFO,"Scenario: " +pickleWrapper.toString());
+	    public void feature(PickleWrapper pickleWrapper, FeatureWrapper cucumberFeature) {  
 			// Chạy một kịch bản riêng lẻ bằng cách lấy pickle từ PickleWrapper
-	        testNGCucumberRunner.runScenario(pickleWrapper.getPickle());
-
+	        testNGCucumberRunner.runScenario(pickleWrapper.getPickle());  
 	    }
 		
 		// DataProvider cung cấp các scenarios cho phương thức kiểm thử  
 		@DataProvider(name = "scenarios")  
-		public Object[][] scenarios() throws InterruptedException {
-	        if (testNGCucumberRunner == null) {
-	            testNGCucumberRunner = new TestNGCucumberRunner(getClass());
+		public Object[][] scenarios() {  
+	        if (testNGCucumberRunner == null) {  
+	            testNGCucumberRunner = new TestNGCucumberRunner(getClass());  
 	        }  
 	     // Cung cấp các scenarios sẽ được chạy trong các bài kiểm thử  
 	        return testNGCucumberRunner.provideScenarios();  
@@ -58,3 +51,4 @@ public class LoginTestRunner {
 			testNGCucumberRunner.finish();
 		}
 }
+

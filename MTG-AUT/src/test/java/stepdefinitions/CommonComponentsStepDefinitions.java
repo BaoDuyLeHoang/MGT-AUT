@@ -77,9 +77,20 @@ public class CommonComponentsStepDefinitions extends BaseTest {
         commonComponents.clickUserIcon();
         commonComponents.clickViCuaToi();
     }
+    @And("staff clicks grave report")
+    public void staffClicksGraveReport() {
+        commonComponents.clickBaoCaoMoStaff();
 
-    @Then("user should see the profile section")
-    public void userShouldSeeTheProfileSection() {
-        
     }
+    @And("user checks notification")
+    public void userChecksNotification() throws InterruptedException {
+        commonComponents.clickThongBaoCustomer();
+        commonComponents.clickThongBaoDauTienCustomer();
+    }
+
+    @Then("the success message {string} should be displayed")
+    public void theSuccessMessageShouldBeDisplayed(String expectedMessage) {
+        commonComponents.verifySuccessMessage(expectedMessage);
+    }
+
 }

@@ -5,6 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+import java.util.NoSuchElementException;
 
 //class này dùng để chứa các thành phần dùng chung cho một số page
 //page nào có các thành phần trong class này có thể kế thừ từ class này
@@ -26,6 +31,8 @@ public class CommonComponents extends BasePage {
 	private WebElement quanLyDichVu;
 	@FindBy(how = How.XPATH, using = "//a[@href='/material-management']")
 	private WebElement quanLyVatLieu;
+	@FindBy(how = How.XPATH, using = "//a[@href='/admin/livestream']")
+	private WebElement adminLiveStream;
 
 
 	//MANAGER
@@ -56,12 +63,21 @@ public class CommonComponents extends BasePage {
 	@FindBy(how = How.XPATH, using = "//a[@href='/blog-manager']")
 	private WebElement dashboardBlog;
 
+	@FindBy(how = How.XPATH, using = "//a[@href='/grave-reports']")
+	private WebElement baoCaoMoStaff;
+
 	//STAFF
 	@FindBy(how = How.XPATH, using = "//a[@href='/profilestaff-staff']")
 	private WebElement dashboardHoSoNhanVien_Staff;
 
 	@FindBy(how = How.XPATH, using = "//a[@href='/danhsachdonhang-staff']")
 	private WebElement dashboardCongViec;
+
+	@FindBy(how = How.XPATH, using = "//a[@href='/notifications-staff']")
+	private WebElement dashboardThongBao;
+
+	@FindBy(how = How.XPATH, using = "//a[@href='/schedule-staff']")
+	private WebElement lichLamViecStaff;
 
 	@FindBy(how = How.CLASS_NAME, using = "logout-button")
 	private WebElement logoutBtn;
@@ -109,9 +125,18 @@ public class CommonComponents extends BasePage {
 	@FindBy(how = How.CLASS_NAME, using = "cart-link")
 	private WebElement cartIcon;
 
+	@FindBy(how = How.CSS, using = ".MuiAlert-message.css-127h8j3")
+	private WebElement alertMessage ;
+
+	@FindBy(how = How.CLASS_NAME, using = "notifications-button")
+	private WebElement thongBaoCustomer ;
+
+	@FindBy(how = How.CSS, using = ".notifications-list .notification-item:first-child")
+	private WebElement thongBaoDauTienCustomer ;
+
 
 	//Admin
-	public void clickDashBoardQuanLyTaiKhoan(){
+	public void clickDashBoardQuanLyTaiKhoanAdmin(){
 		clickElement(dashboardQuanLyTaiKhoan);
 	}
 	public void clickThongKeAdmin(){
@@ -125,6 +150,9 @@ public class CommonComponents extends BasePage {
 	}
 	public void clickQuanLyVatLieuAdmin(){
 		clickElement(quanLyVatLieu);
+	}
+	public void clickLiveStreamAdmin(){
+		clickElement(adminLiveStream);
 	}
 
 	//Trang quản lý
@@ -163,8 +191,18 @@ public class CommonComponents extends BasePage {
 	public void clickCongViec(){
 		clickElement(dashboardCongViec);
 	}
+	public void clickThongBao(){
+		clickElement(dashboardThongBao);
+	}
 	public void clickLogoutButton(){
 		clickElement(logoutBtn);
+	}
+	public void clickLichLamViecStaff(){
+		clickElement(lichLamViecStaff);
+	}
+	public void clickBaoCaoMoStaff(){
+		scrollToBottomPage();
+		clickElement(baoCaoMoStaff);
 	}
 
 	// CUSTOMER
@@ -189,6 +227,14 @@ public class CommonComponents extends BasePage {
 	public void clickGioHang(){
 		clickElement(cartIcon);
 	}
+	public void clickThongBaoCustomer() throws InterruptedException {
+		clickElement(thongBaoCustomer);
+		Thread.sleep(3000);
+	}
+	public void clickThongBaoDauTienCustomer() throws InterruptedException {
+		clickElement(thongBaoDauTienCustomer);
+		Thread.sleep(3000);
+	}
 	public void clickYeuCauKhachHang(){
 		clickElement(yeuCauKhachHang);
 	}
@@ -197,6 +243,26 @@ public class CommonComponents extends BasePage {
 	}
 	public void clickViCuaToi(){
 		clickElement(viCuaToi);
+	}
+	public void verifySuccessMessage(String expectedMessage) {
+		try {
+
+			// Wait for the message to be visible
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.visibilityOf(alertMessage));
+
+			// Get the text of the message
+			String actualMessage = alertMessage.getText();
+
+			// Verify the message content
+			if (actualMessage.equals(expectedMessage)) {
+				System.out.println("Success: The message is displayed as expected: " + actualMessage);
+			} else {
+				System.out.println("Error: Expected message: " + expectedMessage + " but found: " + actualMessage);
+			}
+		} catch (NoSuchElementException e) {
+			System.out.println("Error: Notification element not found.");
+		}
 	}
 
 }

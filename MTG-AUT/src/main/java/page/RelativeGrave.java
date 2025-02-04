@@ -34,10 +34,16 @@ public class RelativeGrave extends BasePage {
     private WebElement guiYeuCau;
     @FindBy(how = How.CLASS_NAME, using = "confirm-modal-submit")
     private WebElement xacNhanYeuCau;
+    @FindBy(how = How.ID, using = "serviceId")
+    private WebElement service;
+
+
+
 
     public void clickChiTiet(){
         clickElement(chiTiet);
     }
+
     public void clickTaoYeuCauMoi(){
         clickElement(taoYeuCauMoi);
     }
@@ -59,6 +65,18 @@ public class RelativeGrave extends BasePage {
         for (WebElement option : options) {
             if(option.getText().contains(typeRequest)){
                 clickElement(option);
+            }
+        }
+    }
+    public void clickDichVu(String serviceName){
+        if(isElementVisibility(service)){
+            Select select = new Select(service);
+            List<WebElement> options = select.getOptions();
+
+            for (WebElement option : options) {
+                if(option.getText().contains(serviceName)){
+                    clickElement(option);
+                }
             }
         }
     }

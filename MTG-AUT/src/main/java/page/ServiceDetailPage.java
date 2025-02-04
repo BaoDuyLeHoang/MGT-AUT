@@ -29,6 +29,12 @@ public class ServiceDetailPage extends BasePage {
     @FindBy(how = How.CSS, using = ".MuiAlert-message.css-1pxa9xg-MuiAlert-message")
     private WebElement thongBao;
 
+    @FindBy(how = How.XPATH, using = "//button[contains(text(), 'Xác nhận dịch vụ')]")
+    private WebElement btnXacNhanDichVu;
+    public void clickBtnXacNhanDichVuCustomer(){
+        clickElement(btnXacNhanDichVu);
+    }
+
     public void isThongBaoDisplayed(){
         this.isElementVisibility(thongBao,500);
     }

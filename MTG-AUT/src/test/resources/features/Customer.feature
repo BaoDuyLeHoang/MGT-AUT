@@ -4,7 +4,7 @@ Feature: Main Flow of the Application
     Given user enter the URL "https://mtg-two.vercel.app/login"
 
 
-  @customerBookingFlows
+  @customers
   Scenario: User deposits money into wallet
 
     When user login with customer
@@ -15,7 +15,7 @@ Feature: Main Flow of the Application
     Then user pays the order "VNPay"
 
 
-  @customerBookingFlows
+  @customers
   Scenario Outline: User booking service
 
     When user login with customer
@@ -43,7 +43,7 @@ Feature: Main Flow of the Application
       | Hữu An  | Thanh toán tiền mặt | 25/01/2025 |
 
 
-  @customerBookingFlow
+  @customers
   Scenario Outline: User booking new special request
     When user login with customer
     And user clicks Relative Grave
@@ -54,6 +54,21 @@ Feature: Main Flow of the Application
     And user inputs note of request "<note>"
     Then user clicks button to send special request
     Examples:
-      | martyrName     | type          | date       | note                                     |
-      | Đinh Xuân Phúc | tình trạng mộ | 01-15-2025 | Ngày đấy là đám giỗ nên làm sớm giúp tôi |
+      | martyrName  | type          | date       | note                                     |
+      | An          | tình trạng mộ | 02-01-2025 | Ngày đấy là đám giỗ nên làm sớm giúp tôi |
+
+
+  @customer
+  Scenario Outline: User booking new special request
+    When user login with customer
+    And user clicks Relative Grave
+    And user clicks the button create new special request
+    And user selects martyr name "<martyrName>"
+    And user selects type of request "<type>"
+    And user selects service of request "<service>"
+    And user inputs note of request "<note>"
+
+    Examples:
+      | martyrName  | type                                               | service       | note                                     |
+      | An          | Yêu cầu thêm dịch vụ có sẵn của nghĩa trang cho mộ | Thay hoa cúc  | Ngày đấy là đám giỗ nên làm sớm giúp tôi |
 
